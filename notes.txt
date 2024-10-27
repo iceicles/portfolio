@@ -1,0 +1,15 @@
+Project Struture
+
+Using the guideline prescribed by https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366 
+
+- app 
+    - routes for different pages - /about, /tools etc
+
+- components
+    - different types of components include (buttons, cards, header, footer, forms, etc)
+
+- containers
+    - pages sub components (for example, home page can have a hero section but contact page may not need one)
+
+- types
+    - expected properties and values for data

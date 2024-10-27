@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const ProfilePicture = () => {
   return (
-    <div className='float-left'>
+    <div>
       <Image
         className='rounded-[50%]'
         src='/profilepic.png'
