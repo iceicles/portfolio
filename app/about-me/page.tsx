@@ -1,7 +1,11 @@
-import React, { FC } from 'react';
+import MainSection from '../../containers/about-page/main-section';
 
-const About: FC<{}> = ({}) => {
-  return <div>About me</div>;
-};
-
-export default About;
+export default function About() {
+  return (
+    <>
+      <main className='m-auto w-[75%] mt-[10vh]'>
+        <MainSection />
+      </main>
+    </>
+  );
+}
