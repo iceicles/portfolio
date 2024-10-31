@@ -3,18 +3,21 @@ import { AboutMeCards } from './constants';
 
 const MainSection = () => {
   return (
-    <div className='flex gap-[100px]'>
+    <div className='flex gap-y-[5vw] justify-evenly flex-wrap border-dotted'>
       {AboutMeCards.map((card) => (
-        <div key={card.id}>
+        <>
           <AboutMeCard
+            id={card.id}
+            isCurrent={card.isCurrent}
             title={card.title}
+            href={card.href}
             description={card.description}
             workplace={card.workplace}
             yearsActive={card.yearsActive}
             isTools={card.isTools}
             tools={card.tools}
           />
-        </div>
+        </>
       ))}
     </div>
   );

@@ -4,14 +4,17 @@ import { AboutMeCard } from "../../../types/AboutMeCard"
 export const AboutMeCards: AboutMeCard[] = [
     {
         id: 1,
+        isCurrent: true,
         title: 'Frontend Developer',
+        href: 'https://www.canadiantire.ca/en.html',
         description: 'Description',
         workplace: 'Canadian Tire',
-        yearsActive: '2020 - Present',
+        yearsActive: 'Oct 2020 - Present',
     },
     {
         id: 2,
         title: 'Android Developer',
+        href: 'https://www.canadiantire.ca/en.html',
         description: 'Description',
         workplace: 'Canadian Tire',
         yearsActive: 'Feb 2020 - Sept 2020',
@@ -20,7 +23,8 @@ export const AboutMeCards: AboutMeCard[] = [
     },
     {
         id: 3,
-        title: 'Frontend Developer',
+        title: 'DevOps Analyst',
+        href: 'https://www.canadiantire.ca/en.html',
         description: 'Description',
         workplace: 'Canadian Tire',
         yearsActive: 'Jun 2019 - Jan 2020',
