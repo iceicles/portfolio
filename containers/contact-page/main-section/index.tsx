@@ -1,14 +1,52 @@
 'use client';
-import React, { FC } from 'react';
+import React, { FC, useRef } from 'react';
 import ContactForm from '../../../components/Form';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { IFormValues } from '../../../Interfaces/Form';
+import { IFormErrorInputs, IFormValues } from '../../../Interfaces/Form';
+import emailjs from '@emailjs/browser';
 
 const MainSection: FC<{}> = ({}) => {
-  const { register, handleSubmit } = useForm<IFormValues>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IFormValues>({
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+  });
 
-  const onSubmit: SubmitHandler<IFormValues> = (data) => {
-    console.log('data - ', JSON.stringify(data));
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const emailjs_service_id = process.env.NEXT_PUBLIC_SERVICE_ID || '';
+  const emailjs_template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
+  const emailjs_public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY || '';
+
+  const onSubmit: SubmitHandler<IFormValues> = () => {
+    emailjs
+      .sendForm(emailjs_service_id, emailjs_template_id, form.current!, {
+        publicKey: emailjs_public_key,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('There was an error, please try again');
+        }
+      );
+  };
+
+  console.log('errors - ', errors);
+
+  const errorMessages: IFormErrorInputs = {
+    nameError: errors.name?.message,
+    emailError: errors.email?.message,
+    messageError: errors.message?.message,
   };
 
   return (
@@ -18,7 +56,8 @@ const MainSection: FC<{}> = ({}) => {
       name={'name'}
       email={'email'}
       message={'message'}
-      required
+      errors={errorMessages}
+      ref={form}
     />
   );
 };

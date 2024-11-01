@@ -4,3 +4,9 @@ export interface IFormValues {
   message: string;
   required: boolean;
 }
+
+export interface IFormErrorInputs {
+  nameError: string | undefined;
+  emailError: string | undefined;
+  messageError: string | undefined;
+}
