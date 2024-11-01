@@ -16,14 +16,15 @@ export const HeaderNavs: HeaderNav[] = [
         value: 'Contact',
         href: '/contact'
     },
-    {
-        id: 4,
-        value: 'Tools',
-        href: '/tools'
-    },
-    {
-        id: 5,
-        value: 'Memory Dump',
-        href: '/memory-dump'
-    },
+    /* don't need these for now */
+    // {
+    //     id: 4,
+    //     value: 'Tools',
+    //     href: '/tools'
+    // },
+    // {
+    //     id: 5,
+    //     value: 'Memory Dump',
+    //     href: '/memory-dump'
+    // },
 ]
