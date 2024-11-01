@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
+import MainSection from '../../containers/contact-page/main-section';
 
 const Contact: FC<{}> = ({}) => {
-  return <div>Contact me</div>;
+  return <MainSection />;
 };
 
 export default Contact;
