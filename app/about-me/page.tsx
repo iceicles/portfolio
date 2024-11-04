@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Modal from '../../components/Modal';
 import MainSection from '../../containers/about-page/main-section';
 import TimelineSection from '../../containers/about-page/timeline-section';
@@ -13,6 +13,8 @@ export default function About() {
     title: '',
     description: '',
   });
+
+  const modalRef = useRef<HTMLDivElement | null>(null);
 
   const getModalContent = (id: number): void => {
     AboutModalContent.map((content) => {
@@ -41,11 +43,30 @@ export default function About() {
 
   // useEffect to handle closing modal when anywhere outside modal is clicked
   useEffect(() => {
-    document.addEventListener('click', closeModal);
+    // Function to handle closing the modal
+    const handleClickOutside = (event: Event) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        closeModal();
+      }
+    };
 
-    // cleanup effect when page/component is unmounted/changed
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.code === 'Escape') {
+        closeModal();
+      }
+    };
+
+    // Attach event listeners
+    document.addEventListener('click', handleClickOutside);
+    document.addEventListener('keydown', handleEscape);
+
+    // Cleanup listeners on unmount
     return () => {
-      document.removeEventListener('click', closeModal);
+      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
     };
   }, [closeModal]);
 
@@ -55,7 +76,12 @@ export default function About() {
         <MainSection />
         <TimelineSection showModal={onModalClick} />
       </div>
-      <Modal show={showModal} onCloseClick={closeModal} modalContent={content}>
+      <Modal
+        show={showModal}
+        onCloseClick={closeModal}
+        modalContent={content}
+        modalRef={modalRef}
+      >
         Modal Content
       </Modal>
     </>

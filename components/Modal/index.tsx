@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, MutableRefObject } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
 
 interface Modal {
@@ -6,14 +6,27 @@ interface Modal {
   children: any;
   onCloseClick: () => void;
   modalContent: AboutMeModalContent;
+  modalRef: MutableRefObject<HTMLDivElement | null>;
 }
 
-const Modal: FC<Modal> = ({ show, children, onCloseClick, modalContent }) => {
+const Modal: FC<Modal> = ({
+  show,
+  children,
+  onCloseClick,
+  modalContent,
+  modalRef,
+}) => {
   return (
     <>
       {show && (
-        <div className='fixed flex justify-center items-center overflow-y-auto overflow-x-hidden z-50 w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg'>
-          <div className='relative p-4 w-full max-w-2xl max-h-full border-white border-2 rounded-lg'>
+        <div
+          id='modal'
+          className='fixed flex justify-center items-center overflow-y-auto overflow-x-hidden z-50 w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg'
+        >
+          <div
+            ref={modalRef}
+            className='relative p-4 w-full max-w-2xl max-h-full border-white border-2 rounded-lg'
+          >
             <div className='relative rounded-lg shadow'>
               <div className='flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600'>
                 <h3 className='text-4xl'>{modalContent.title}</h3>
