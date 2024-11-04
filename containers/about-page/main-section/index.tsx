@@ -4,7 +4,7 @@ import { ProfilePicture } from '../../home-page/hero-section/ProfilePic/ProfileP
 const MainSection = () => {
   return (
     <>
-      <div className='w-[40vw] mr-auto ml-[10vw] relative'>
+      <div className='w-[40vw] ml-[10vw]'>
         <ProfilePicture additionalClass='float-left shape-outside-circle' />
         <p>
           I have a background in computer science and IT. I'm currently a
@@ -23,29 +23,7 @@ const MainSection = () => {
           Corporation. I have a background in computer science and IT. I'm
           currently a Frontend engineer at Canadian Tire Corporation. I have a
           background in computer science and IT. I'm currently a Frontend
-          engineer at Canadian Tire Corporation. I have a background in computer
-          science and IT. I'm currently a Frontend engineer at Canadian Tire
-          Corporation. I have a background in computer science and IT. I'm
-          currently a Frontend engineer at Canadian Tire Corporation. I have a
-          background in computer science and IT. I'm currently a Frontend
-          engineer at Canadian Tire Corporation. I have a background in computer
-          science and IT. I'm currently a Frontend engineer at Canadian Tire
-          Corporation. I have a background in computer science and IT. I'm
-          currently a Frontend engineer at Canadian Tire Corporation. I have a
-          background in computer science and IT. I'm currently a Frontend
-          engineer at Canadian Tire Corporation. I have a background in computer
-          science and IT. I'm currently a Frontend engineer at Canadian Tire
-          Corporation. I have a background in computer science and IT. I'm
-          currently a Frontend engineer at Canadian Tire Corporation. I have a
-          background in computer science and IT. I'm currently a Frontend
-          engineer at Canadian Tire Corporation. I have a background in computer
-          science and IT. I'm currently a Frontend engineer at Canadian Tire
-          Corporation. I have a background in computer science and IT. I'm
-          currently a Frontend engineer at Canadian Tire Corporation. I have a
-          background in computer science and IT. I'm currently a Frontend
-          engineer at Canadian Tire Corporation. I have a background in computer
-          science and IT. I'm currently a Frontend engineer at Canadian Tire
-          Corporation.
+          engineer at Canadian Tire Corporation.
         </p>
       </div>
     </>

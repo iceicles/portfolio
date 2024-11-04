@@ -20,7 +20,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.shape-outside-circle {
-  shape-outside: circle(55%);
+@layer utilities {
+  .shape-outside-circle {
+    shape-outside: circle(55%);
+  }
 }
-
