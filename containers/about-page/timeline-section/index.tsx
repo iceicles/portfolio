@@ -3,7 +3,7 @@ import { AboutMeCards } from './constants';
 import AboutMeCardShort from '../../../components/Card/AboutMeCardShort';
 
 interface TimelineSection {
-  showModal: () => void;
+  showModal(id: number): void;
 }
 
 const TimelineSection: FC<TimelineSection> = ({ showModal }) => {
@@ -12,9 +12,10 @@ const TimelineSection: FC<TimelineSection> = ({ showModal }) => {
       {AboutMeCards.map((card) => (
         <React.Fragment key={card.id}>
           <AboutMeCardShort
+            id={card.id}
             title={card.title}
             workplace={card.workplace}
-            onClick={showModal}
+            onClick={() => showModal(card.id)}
           />
         </React.Fragment>
       ))}

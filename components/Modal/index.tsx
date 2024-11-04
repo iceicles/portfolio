@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
+import { AboutMeModalContent } from '../../types/AboutMeModalContent';
 
 interface Modal {
   show: boolean;
   children: any;
   onCloseClick: () => void;
+  modalContent: AboutMeModalContent;
 }
 
-const Modal: FC<Modal> = ({ show, children, onCloseClick }) => {
-  console.log('show - ', show);
+const Modal: FC<Modal> = ({ show, children, onCloseClick, modalContent }) => {
   return (
     <>
       {show && (
@@ -15,7 +16,7 @@ const Modal: FC<Modal> = ({ show, children, onCloseClick }) => {
           <div className='relative p-4 w-full max-w-2xl max-h-full border-white border-2 rounded-lg'>
             <div className='relative rounded-lg shadow'>
               <div className='flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600'>
-                <h3 className='text-4xl'>Front End Developer</h3>
+                <h3 className='text-4xl'>{modalContent.title}</h3>
                 {/* TODO: move close button svg */}
                 <button
                   type='button'
@@ -42,8 +43,9 @@ const Modal: FC<Modal> = ({ show, children, onCloseClick }) => {
               </div>
 
               <div className='p-4 md:p-5 space-y-4'>
-                <p>{children}</p>
+                <p>{modalContent.description}</p>
               </div>
+              {children}
             </div>
           </div>
         </div>
@@ -51,14 +53,5 @@ const Modal: FC<Modal> = ({ show, children, onCloseClick }) => {
     </>
   );
 };
-
-// fixed top-0 right-0 left-0
-// <div className='overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full'>
-//   <div> {children} </div>
-
-//   <div>
-//     <button onClick={onCloseClick}>Close</button>
-//   </div>
-// </div>
 
 export default Modal;
