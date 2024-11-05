@@ -8,11 +8,12 @@ const Footer: FC<{}> = ({}) => {
       <div className='overflow-hidden max-w-[100vw]'>
         <footer>
           <div className='w-full p-4 md:py-8'>
+            <hr className='my-6 sm:mx-auto lg:my-8' />
             <div className='sm:flex sm:items-center sm:justify-between'>
               <span>MU (logo)</span>
               <ul className='flex flex-wrap items-center'>
                 {FooterNavs.map((footer) => (
-                  <li>
+                  <li key={footer.id}>
                     <Link
                       href={footer.href}
                       className='hover:underline me-4 md:me-6'
@@ -23,7 +24,7 @@ const Footer: FC<{}> = ({}) => {
                 ))}
               </ul>
             </div>
-            <hr className='my-6 sm:mx-auto lg:my-8' />
+
             <div className='block text-sm sm:text-center'>
               © 2024 ❤ Hand made by {}
               <Link
