@@ -12,6 +12,9 @@ export default function About() {
     id: 0,
     title: '',
     description: '',
+    jobHREF: '',
+    workplace: '',
+    yearsActive: '',
   });
 
   const modalRef = useRef<HTMLDivElement | null>(null);
@@ -26,6 +29,9 @@ export default function About() {
           id: content.id,
           title: content.title,
           description: content.description,
+          jobHREF: content.jobHREF,
+          workplace: content.workplace,
+          yearsActive: content.yearsActive,
         };
         setModalContent(contentData);
       }
@@ -81,9 +87,7 @@ export default function About() {
         onCloseClick={closeModal}
         modalContent={content}
         modalRef={modalRef}
-      >
-        Modal Content
-      </Modal>
+      ></Modal>
     </>
   );
 }

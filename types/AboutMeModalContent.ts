@@ -3,4 +3,7 @@ export type AboutMeModalContent = {
     title: string,
     description: string,
     tools?: Array<string>,
+    jobHREF: string,
+    workplace: string,
+    yearsActive: string,
   }
