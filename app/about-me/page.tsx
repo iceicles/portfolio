@@ -15,6 +15,7 @@ export default function About() {
     jobHREF: '',
     workplace: '',
     yearsActive: '',
+    tools: [],
   });
 
   const modalRef = useRef<HTMLDivElement | null>(null);
@@ -32,6 +33,7 @@ export default function About() {
           jobHREF: content.jobHREF,
           workplace: content.workplace,
           yearsActive: content.yearsActive,
+          tools: content.tools,
         };
         setModalContent(contentData);
       }

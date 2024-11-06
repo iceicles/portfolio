@@ -72,12 +72,17 @@ const Modal: FC<Modal> = ({
                 </div>
               </div>
 
-              <div className='p-4 md:p-5 space-y-4'>
+              <div className='flex p-4 md:p-5 space-y-4'>
                 {/* todo - sanitize this dangerously insert html property */}
                 <p
                   dangerouslySetInnerHTML={{ __html: modalContent.description }}
-                  className='p-4'
+                  className='p-4 pr-20'
                 ></p>
+                <span className='flex flex-col justify-evenly h-40'>
+                  {modalContent.tools?.map((tools) => (
+                    <p>{tools}</p>
+                  ))}
+                </span>
               </div>
               {children}
             </div>
