@@ -15,7 +15,10 @@ const AboutMeCardShort: FC<AboutMeCardShort> = ({
 }) => {
   return (
     <>
-      <button onClick={() => onClick(id)} className='border-white border-2'>
+      <button
+        onClick={() => onClick(id)}
+        className='border-white border-2 p-2 rounded-xl'
+      >
         <h1>{title}</h1>
         <p>{workplace}</p>
       </button>
