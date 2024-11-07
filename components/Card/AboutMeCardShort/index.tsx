@@ -17,7 +17,7 @@ const AboutMeCardShort: FC<AboutMeCardShort> = ({
     <>
       <button
         onClick={() => onClick(id)}
-        className='border-white border-2 p-2 rounded-xl ml-2.5 sm:ml-0 first:ml-0'
+        className='border-white border-2 p-2 rounded-xl '
       >
         <h1>{title}</h1>
         <p>{workplace}</p>
@@ -26,4 +26,5 @@ const AboutMeCardShort: FC<AboutMeCardShort> = ({
   );
 };
 
+//ml-2.5 sm:ml-0 first:ml-0
 export default AboutMeCardShort;

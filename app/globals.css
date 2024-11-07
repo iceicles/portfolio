@@ -21,7 +21,12 @@ body {
 }
 
 @layer utilities {
-  .shape-outside-circle {
-    shape-outside: circle(50%);
+  /* contains some group of styles relating to profile pic */
+  .profile-pic {
+    shape-outside: circle(46%);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 30vw;
+    margin: 2rem;
   }
 }
