@@ -30,9 +30,9 @@ const ContactForm: FC<ContactForm> = ({
     'border-solid border-2 border-white bg-transparent p-[0.5rem] italic';
 
   return (
-    <div>
+    <div className='m-auto max-w-3xl'>
       <form
-        className='m-auto w-[25%] flex flex-col gap-[3rem]'
+        className='flex flex-col gap-[3rem] w-full px-16'
         onSubmit={onSubmit}
         ref={ref}
       >
