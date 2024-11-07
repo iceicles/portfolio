@@ -80,7 +80,7 @@ export default function About() {
 
   return (
     <>
-      <div className='flex justify-around'>
+      <div className='flex flex-col md:flex-row justify-evenly'>
         <MainSection />
         <TimelineSection showModal={onModalClick} />
       </div>

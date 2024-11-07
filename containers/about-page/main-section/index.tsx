@@ -4,7 +4,7 @@ import { ProfilePicture } from '../../home-page/hero-section/ProfilePic/ProfileP
 const MainSection = () => {
   return (
     <>
-      <div className='w-[40vw] ml-[10vw]'>
+      <div className='w-[80vw] lg:w-[50vw] md:w-[60vw] md:ml-[10vw] flex flex-col sm:block self-center gap-0'>
         <ProfilePicture additionalClass='float-left shape-outside-circle' />
         <p>
           I have a background in computer science and IT. I'm currently a

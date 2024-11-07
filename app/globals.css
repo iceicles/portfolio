@@ -22,6 +22,6 @@ body {
 
 @layer utilities {
   .shape-outside-circle {
-    shape-outside: circle(55%);
+    shape-outside: circle(50%);
   }
 }
