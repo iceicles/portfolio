@@ -12,7 +12,7 @@ const ProfileHeading: FC<{}> = ({}) => {
           Hi, <span className='bg-gray-800 rounded p-2'>I'm Moses</span>.{' '}
         </strong>
       </h2>
-      <div className='h-[6rem]'>
+      <div className='h-[15rem] sm:h-[6rem]'>
         <TypeAnimation
           sequence={[
             "I'm a fullstack web developer",
@@ -25,10 +25,10 @@ const ProfileHeading: FC<{}> = ({}) => {
           repeat={Infinity}
           speed={30}
           deletionSpeed={40}
-          style={{ fontSize: '3rem' }}
+          style={{ fontSize: 'clamp(2.8rem, 2rem + 2vw, 2.5rem)' }}
         />
       </div>
-      <p className='text-[clamp(1.2rem,.6rem+2vw,1.8rem)] mb-[calc(1.5rem*2)]'>
+      <p className='mt-[1vh] text-[clamp(1.2rem,.6rem+2vw,1.8rem)] mb-[calc(1.5rem*2)]'>
         <i>
           I currently live in Toronto, Ontario, and work for {}
           <Link
