@@ -25,7 +25,7 @@ const Modal: FC<Modal> = ({
       {show && (
         <div
           id='modal'
-          className='fixed flex justify-center items-center overflow-y-auto overflow-x-hidden z-50 w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg'
+          className='fixed flex justify-center items-center overflow-y-auto overflow-x-hidden z-50 w-full inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg'
         >
           <div
             ref={modalRef}
@@ -79,8 +79,9 @@ const Modal: FC<Modal> = ({
                   className='p-4 pr-20'
                 ></p>
                 <span className='flex flex-col justify-evenly h-40'>
-                  {modalContent.tools?.map((tools) => (
-                    <p>{tools}</p>
+                  {modalContent.tools?.map((tools, _id) => (
+                    // todo - hmm not sure why i can't use modalContent.id here...
+                    <p key={_id}>{tools}</p>
                   ))}
                 </span>
               </div>
