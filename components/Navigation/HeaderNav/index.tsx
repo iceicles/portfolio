@@ -7,5 +7,9 @@ interface HeaderNavProps {
 }
 
 export const HeaderNav: FC<HeaderNavProps> = ({ value, href }) => {
-  return <Link href={href}>{value}</Link>;
+  return (
+    <li>
+      <Link href={href}>{value}</Link>
+    </li>
+  );
 };
