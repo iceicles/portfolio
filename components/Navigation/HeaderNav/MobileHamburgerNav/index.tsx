@@ -13,6 +13,9 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
         <InitialsLogo styles='self-center' />
         <label className='hamburger z-10'>
           <input type='checkbox' onClick={() => setToggleModal(!toggleModal)} />
+          {/* TODO: look into why Hamburger svg can't be used here.. has something to do with styles perhaps --
+           <Hamburger className='line line-top-bottom text-5xl' />
+          */}
           <svg viewBox='0 0 32 32'>
             <path
               className='line line-top-bottom'
