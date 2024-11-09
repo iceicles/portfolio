@@ -7,5 +7,5 @@ interface InfoSectionNavProps {
 }
 
 export const InfoSectionNav: FC<InfoSectionNavProps> = ({ value, href }) => {
-  return <Link href={href}>{value}</Link>;
+  return <Link href={href} dangerouslySetInnerHTML={{ __html: value }}></Link>;
 };
