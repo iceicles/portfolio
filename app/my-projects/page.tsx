@@ -12,9 +12,7 @@ const Projects: FC<{}> = ({}) => {
           'Currently cooking...',
           2000,
           'Working on it...',
-          2000,
-          '🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧',
-          2000,
+          4000,
         ]}
         repeat={Infinity}
         speed={30}
