@@ -13,6 +13,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'logo-spin': 'rotateYanim 2s linear infinite'
+      },
+      keyframes: {
+        rotateYanim: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
+        }
+      }
     },
   },
   plugins: [],

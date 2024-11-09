@@ -2,9 +2,9 @@
 import React, { FC } from 'react';
 import { HeaderNavs } from './constants';
 import { HeaderNav } from '../Navigation/HeaderNav';
-import Link from 'next/link';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { MobileHamburgerNav } from '../Navigation/HeaderNav/MobileHamburgerNav';
+import { InitialsLogo } from '../Logo/InitialsLogo';
 
 const Header: FC<{}> = ({}) => {
   const isMobile = useIsMobile();
@@ -25,7 +25,7 @@ const Header: FC<{}> = ({}) => {
                   <HeaderNav key={_i} value={el.value} href={el.href} />
                 ))}
                 <li className='absolute right-[15%]'>
-                  <Link href='/'>MU</Link>
+                  <InitialsLogo />
                 </li>
               </>
             </ul>

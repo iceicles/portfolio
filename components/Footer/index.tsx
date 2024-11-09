@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { FC } from 'react';
 import { FooterNavs } from './constant';
+import { InitialsLogo } from '../Logo/InitialsLogo';
 
 const Footer: FC<{}> = ({}) => {
   return (
@@ -10,7 +11,7 @@ const Footer: FC<{}> = ({}) => {
           <div className='w-full p-4 md:py-8'>
             <hr className='my-6 sm:mx-auto lg:my-8' />
             <div className='flex lg:items-center justify-between'>
-              <span>MU (logo)</span>
+              <InitialsLogo value={'MU'} />
               <ul className='sm:flex md:flex-row sm:flex-wrap sm:items-center flex flex-col gap-1'>
                 {FooterNavs.map((footer) => (
                   <li key={footer.id} className='self-end lg:self-auto p-2'>

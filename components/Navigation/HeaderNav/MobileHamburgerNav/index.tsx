@@ -2,12 +2,16 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { HeaderNavs } from '../../../Header/constants';
 import { HeaderNav } from '../../HeaderNav';
+import { InitialsLogo } from '../../../Logo/InitialsLogo';
 
 export const MobileHamburgerNav: FC<{}> = ({}) => {
   const [toggleModal, setToggleModal] = useState(false);
 
   return (
     <>
+      <div className='fixed top-0 left-0 p-4'>
+        <InitialsLogo />
+      </div>
       <label className='hamburger z-10'>
         <input type='checkbox' onClick={() => setToggleModal(!toggleModal)} />
         <svg viewBox='0 0 32 32'>
@@ -24,13 +28,13 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
           <div className='fixed top-0 h-screen overflow-y-auto overflow-x-hidden z-2 inset-0 h-[calc(100%-1rem)] transition-all'>
             <div className='relative p-4 w-[50vw] h-full max-w-[50%] bg-black opacity-75'>
               <nav>
-                <ul className='flex flex-col gap-10'>
+                <ul className='flex flex-col gap-10 mt-[15%]'>
                   <>
                     {HeaderNavs.map((el, _i) => (
                       <HeaderNav key={_i} value={el.value} href={el.href} />
                     ))}
                     <li>
-                      <Link href='/'>MU</Link>
+                      <Link href='/'>Home</Link>
                     </li>
                   </>
                 </ul>
