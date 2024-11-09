@@ -3,7 +3,7 @@ import { FooterNav } from "../../types/FooterNav"
 export const FooterNavs: FooterNav[] = [
     {
         id: 1,
-        value: 'Projects',
+        value: 'Some of my projects',
         href: '/my-projects'
     },
     {
@@ -13,7 +13,7 @@ export const FooterNavs: FooterNav[] = [
     },
     {
         id: 3,
-        value: 'Contact',
+        value: 'Get in touch',
         href: '/contact'
     },
 ]
