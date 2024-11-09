@@ -94,5 +94,10 @@ body {
     stroke-dashoffset: -32.42;
   }
 
+  /* animates outline */
+  .border-button {
+    outline: solid 2px #f9fafb;
+    transition: outline 0.2s linear;
+  }
 
 }

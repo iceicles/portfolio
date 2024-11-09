@@ -17,7 +17,7 @@ const AboutMeCardShort: FC<AboutMeCardShort> = ({
     <>
       <button
         onClick={() => onClick(id)}
-        className='border-white border-2 p-2 rounded-xl '
+        className='p-2 rounded-xl shadow-2xl shadow-gray-500/50 hover:border-button'
       >
         <h1>{title}</h1>
         <p>{workplace}</p>
