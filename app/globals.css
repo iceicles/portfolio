@@ -36,6 +36,7 @@ body {
     scrollbar-color: #012760 #000000; /* thumb color and track color */
     overscroll-behavior-y: contain;
     overflow: scroll;
+    overflow-x: hidden;
   }
 
   /* For Webkit browsers (Chrome, Safari, Edge) */
@@ -53,8 +54,7 @@ body {
     border-radius: 0.625rem;
   }
 
-
-  /* mobile hamburger Styles */ 
+  /* mobile hamburger Styles */
   .hamburger {
     cursor: pointer;
   }
@@ -78,7 +78,7 @@ body {
     stroke-width: 3;
     /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .line-top-bottom {
@@ -99,5 +99,4 @@ body {
     outline: solid 2px #f9fafb;
     transition: outline 0.2s linear;
   }
-
 }
