@@ -6,10 +6,7 @@ interface initialsLogo {
   value?: string;
 }
 
-export const InitialsLogo: FC<initialsLogo> = ({
-  styles,
-  value = '＜MU ⁄＞',
-}) => {
+export const InitialsLogo: FC<initialsLogo> = ({ styles, value = 'MU' }) => {
   return (
     <>
       <strong className={styles}>
