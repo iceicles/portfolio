@@ -4,12 +4,15 @@ import Link from 'next/link';
 interface HeaderNavProps {
   value: string;
   href: string;
+  styles?: string;
 }
 
-export const HeaderNav: FC<HeaderNavProps> = ({ value, href }) => {
+export const HeaderNav: FC<HeaderNavProps> = ({ value, href, styles }) => {
   return (
     <li>
-      <Link href={href}>{value}</Link>
+      <Link href={href} className={styles}>
+        {value}
+      </Link>
     </li>
   );
 };
