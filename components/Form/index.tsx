@@ -75,7 +75,7 @@ const ContactForm: FC<ContactForm> = ({
               {...register(message, { required: 'Message is required' })}
               rows={6}
               name={message}
-              placeholder='What would you like to talk about'
+              placeholder='What would you like to talk about?'
               className='border-solid border-2 border-white bg-transparent w-[100%] p-[0.5rem] italic'
             ></textarea>
           </label>
