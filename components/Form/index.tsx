@@ -53,7 +53,9 @@ const ContactForm: FC<ContactForm> = ({
               className={inputClass}
             ></input>
           </label>
-          {errors && <span className='text-red-500'>{errors.nameError}</span>}
+          {errors && (
+            <span className='text-red-500 block h-2'>{errors.nameError}</span>
+          )}
         </div>
         <div>
           <label className={labelClass}>
@@ -66,7 +68,9 @@ const ContactForm: FC<ContactForm> = ({
               className={inputClass}
             ></input>
           </label>
-          {errors && <span className='text-red-500'>{errors.emailError}</span>}
+          {errors && (
+            <span className='text-red-500 block h-2'>{errors.emailError}</span>
+          )}
         </div>
         <div className='w-[100%]'>
           <label className={labelClass}>
@@ -80,7 +84,9 @@ const ContactForm: FC<ContactForm> = ({
             ></textarea>
           </label>
           {errors && (
-            <span className='text-red-500'>{errors.messageError}</span>
+            <span className='text-red-500 block h-2'>
+              {errors.messageError}
+            </span>
           )}
         </div>
         <input
