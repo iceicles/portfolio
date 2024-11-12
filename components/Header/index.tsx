@@ -36,7 +36,7 @@ const Header: FC<{}> = ({}) => {
                     }
                   />
                 ))}
-                <li className='absolute right-[15%]'>
+                <li className='absolute left-[2%]'>
                   <InitialsLogo />
                 </li>
               </>

@@ -11,10 +11,9 @@ const Footer: FC<{}> = ({}) => {
           <div className='w-full p-4 md:py-8'>
             <hr className='my-6 sm:mx-auto lg:my-8' />
             <div className='flex lg:items-center justify-between'>
-              <InitialsLogo value={'MU'} />
               <ul className='sm:flex md:flex-row sm:flex-wrap sm:items-center flex flex-col gap-1'>
                 {FooterNavs.map((footer) => (
-                  <li key={footer.id} className='self-end lg:self-auto p-2'>
+                  <li key={footer.id} className='self-start lg:self-auto p-2'>
                     <Link
                       href={footer.href}
                       className='hover:underline me-4 md:me-6'
@@ -24,9 +23,10 @@ const Footer: FC<{}> = ({}) => {
                   </li>
                 ))}
               </ul>
+              <InitialsLogo />
             </div>
 
-            <div className='block text-sm lg:text-center mt-4'>
+            <div className='block text-sm lg:text-center mt-4 ml-2 lg:ml-0'>
               © 2024 Hand made by {}
               <Link
                 href='https://github.com/iceicles'

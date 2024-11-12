@@ -4,10 +4,9 @@ import { InitialsLogo as Logo } from '../../Icons';
 
 interface initialsLogo {
   styles?: string;
-  value?: string;
 }
 
-export const InitialsLogo: FC<initialsLogo> = ({ styles, value = 'MU' }) => {
+export const InitialsLogo: FC<initialsLogo> = ({ styles }) => {
   return (
     <>
       <strong className={styles}>

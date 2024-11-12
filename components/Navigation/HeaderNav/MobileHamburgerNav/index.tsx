@@ -40,7 +40,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
 
   return (
     <>
-      <div className='flex justify-between items center w-full'>
+      <div className='flex justify-between items-center w-full'>
         <InitialsLogo styles='self-center' />
         <div onClick={() => setShowModal(true)}>
           <label className='hamburger z-10'>
