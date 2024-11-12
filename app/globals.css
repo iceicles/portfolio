@@ -35,8 +35,8 @@ body {
     scrollbar-width: thin; /* makes the scrollbar thinner */
     scrollbar-color: #012760 #000000; /* thumb color and track color */
     overscroll-behavior-y: contain;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: auto; /* ensures that scrolling happens only when necessary (i.e., if there's content to be scrolled to) */
   }
 
   /* For Webkit browsers (Chrome, Safari, Edge) */
@@ -98,5 +98,13 @@ body {
   .border-button {
     outline: solid 2px #f9fafb;
     transition: outline 0.2s linear;
+  }
+
+  /* active link */
+  .active-link {
+    text-decoration: underline;
+    text-decoration-color: #1f2937;
+    text-decoration-thickness: 0.25rem;
+    text-underline-offset: 0.25rem;
   }
 }
