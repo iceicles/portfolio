@@ -4,6 +4,7 @@ import { HeaderNav } from '../../HeaderNav';
 import { InitialsLogo } from '../../../Logo/InitialsLogo';
 import { usePathname } from 'next/navigation';
 import { MobileHamburgerNavs } from './constants';
+import { isActive } from '../../../../utils/isActive';
 
 export const MobileHamburgerNav: FC<{}> = ({}) => {
   const [showModal, setShowModal] = useState(false);
@@ -71,16 +72,13 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
               <nav>
                 <ul className='flex flex-col gap-10 mt-[10vh]'>
                   {MobileHamburgerNavs.map((el, _i) => {
-                    const isActive = pathname.endsWith(el.href);
                     return (
                       <HeaderNav
                         key={_i}
                         value={el.value}
                         href={el.href}
                         styles={
-                          isActive
-                            ? 'underline decoration-4 decoration-gray-800'
-                            : ''
+                          isActive(el.href, pathname) ? 'active-link' : ''
                         }
                       />
                     );
