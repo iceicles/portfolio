@@ -1,7 +1,7 @@
 import React, { FC, MutableRefObject } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
 import Link from 'next/link';
-import { Close } from '../Icons';
+import { Close, CTCLogo } from '../Icons';
 
 interface Modal {
   show: boolean;
@@ -19,7 +19,7 @@ const Modal: FC<Modal> = ({
   modalRef,
 }) => {
   const tagBorderClass =
-    'border-gray-800 bg-gray-800 border-2 border-dotted rounded p-1 w-fit lg:w-inherit h-fit';
+    'border-gray-800 bg-gray-800 border-2 border-dotted rounded p-1 w-fit lg:w-inherit h-fit self-center';
 
   return (
     <>
@@ -45,12 +45,10 @@ const Modal: FC<Modal> = ({
                     <Close className='w-4 h-4' />
                   </button>
                   <div className='flex flex-col sm:flex-row gap-[1rem] w-fit justify-between self-end mt-[15%] text-center w-[200px]'>
-                    <Link
-                      href={modalContent.jobHREF}
-                      target='_blank'
-                      className={tagBorderClass}
-                    >
-                      {modalContent.workplace}
+                    <Link href={modalContent.jobHREF} target='_blank'>
+                      {/* TODO: figure out a way to make add this to constant.ts file - makes it dynamic */}
+                      <CTCLogo className='text-5xl' />
+                      {/* {modalContent.workplace} */}
                     </Link>
                     <span className={tagBorderClass}>
                       {modalContent.yearsActive}
@@ -65,12 +63,12 @@ const Modal: FC<Modal> = ({
                   dangerouslySetInnerHTML={{ __html: modalContent.description }}
                   className='p-4 pr-0 sm:pr-20'
                 ></p>
-                <span className='flex flex-row sm:flex-col justify-evenly h-4'>
+                <span className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col sm:justify-evenly h-4'>
                   {modalContent.tools?.map((tools, _id) => (
                     // todo - hmm not sure why i can't use modalContent.id here...
                     <p
                       key={_id}
-                      className='h-fit border-dotted border-2 bg-gray-900 sm:mb-[0.625rem] sm:last:mb-0'
+                      className='h-fit rounded p-0.5 bg-gray-900 sm:mb-[0.625rem] sm:last:mb-0'
                     >
                       {tools}
                     </p>

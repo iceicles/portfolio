@@ -3,6 +3,7 @@ import { AboutMeModalContent } from "../../types/AboutMeModalContent";
 const listClass = 'flex flex-col gap-2.5'
 const listItemClass = 'list-[square] bg-gray-900 rounded-xl p-2.5'
 
+
 export const AboutModalContent: AboutMeModalContent[] = [
     {
         id: 1,
@@ -25,10 +26,10 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Worked on Sales Alerts functionality on the Buybox for products in user’s Wishlist generating an increase in sales and customer conversions
             </li>
         </ul>`,
-        tools: ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJS'],
+        tools: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'NextJS', 'Redux', 'NodeJS', 'ExpressJS', 'MongoDB', 'Firebase', 'Docker'],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
-        yearsActive: 'Oct/’20 - Present'
+        yearsActive: 'Oct/’20 - Now'
     },
     {
         id: 2,
@@ -43,7 +44,7 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Developed a new home screen as per design specifications improving user experience and personalization
             </li>
         </ul>`,
-        tools: ['Java', 'XML', 'Android Studio'],
+        tools: ['Java', 'XML', 'Firebase'],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
         yearsActive: 'Feb/’20 - Sept/’20'
