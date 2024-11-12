@@ -26,7 +26,7 @@ const Modal: FC<Modal> = ({
       {show && (
         <div
           id='modal'
-          className='fixed flex justify-center items-center  overflow-y-auto overflow-x-hidden z-2 w-full h-full inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg transition-all'
+          className='fixed flex justify-center items-center  overflow-y-auto overflow-x-hidden z-50 w-full h-full inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg transition-all'
         >
           <div
             ref={modalRef}
