@@ -32,7 +32,7 @@ const Header: FC<{}> = ({}) => {
                     styles={
                       isActive(el.href, pathname)
                         ? 'active-link'
-                        : 'hover:underline hover:decoration-4 hover:decoration-gray-800'
+                        : 'hover:hover-link'
                     }
                   />
                 ))}

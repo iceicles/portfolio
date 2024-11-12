@@ -107,4 +107,11 @@ body {
     text-decoration-thickness: 0.25rem;
     text-underline-offset: 0.25rem;
   }
+
+  .hover-link {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: #1f2937;
+    text-underline-offset: 0.25rem;
+  }
 }
