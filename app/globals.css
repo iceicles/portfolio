@@ -97,7 +97,7 @@ body {
   /* animates outline */
   .border-button {
     outline: solid 2px #f9fafb;
-    transition: outline 0.2s linear;
+    transition: outline linear;
   }
 
   /* active link */
