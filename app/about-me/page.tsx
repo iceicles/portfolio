@@ -23,9 +23,6 @@ export default function About() {
   const getModalContent = (id: number): void => {
     AboutModalContent.map((content) => {
       if (content.id === id) {
-        console.log(
-          `title for ${content.id} is ${content.title} and content is ${content.description}`
-        );
         let contentData = {
           id: content.id,
           title: content.title,
