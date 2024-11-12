@@ -64,7 +64,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
 
       {showModal && (
         <>
-          <div className='fixed top-0 h-screen overflow-y-auto overflow-x-hidden z-2 inset-0 h-[calc(100%-1rem)] transition-all'>
+          <div className='fixed top-0 h-screen overflow-y-auto overflow-x-hidden z-50 inset-0 h-[calc(100%-1rem)] transition-all'>
             <div
               className='relative p-4 w-[50vw] h-full max-w-[50%] bg-black opacity-75'
               ref={modalRef}
