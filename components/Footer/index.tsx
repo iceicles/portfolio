@@ -24,7 +24,7 @@ const Footer: FC<{}> = ({}) => {
             </div>
 
             <div className='block text-sm lg:text-center mt-4 ml-2 lg:ml-0'>
-              © 2024 Hand made by {}
+              © 2024 Crafted by {}
               <Link
                 href='https://github.com/iceicles'
                 target='_blank'
