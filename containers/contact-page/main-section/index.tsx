@@ -10,6 +10,7 @@ const MainSection: FC<{}> = ({}) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<IFormValues>({
     defaultValues: {
       name: '',
@@ -31,12 +32,13 @@ const MainSection: FC<{}> = ({}) => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
-          alert('Message sent!');
+          alert('Your message has been sent!');
+          reset(); // clear form
         },
         (error) => {
           console.log('FAILED...', error.text);
           alert('There was an error, please try again');
+          reset();
         }
       );
   };
