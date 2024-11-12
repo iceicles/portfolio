@@ -21,6 +21,10 @@ const config: Config = {
           '0%': { transform: 'rotateY(0deg)' },
           '100%': { transform: 'rotateY(360deg)' },
         }
+      },
+      screens: {
+        'desktop-lg': '1970px',
+        // => @media (min-width: 1970px) { ... }
       }
     },
   },
