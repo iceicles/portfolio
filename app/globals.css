@@ -116,7 +116,7 @@ body {
 
   /* animates outline */
   .border-button {
-    outline: solid 2px #f9fafb;
+    outline: solid 2px #6b7280;
     transition: outline linear;
   }
 
