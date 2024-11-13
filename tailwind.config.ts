@@ -14,7 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       animation: {
-        'logo-spin': 'rotateYanim 2s linear infinite',
+        'logo-spin': 'rotateYanim 2s linear',
         'pulse2': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'bounce2': 'bounce2 2s ease infinite'
       },

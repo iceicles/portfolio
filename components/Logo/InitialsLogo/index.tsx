@@ -11,7 +11,7 @@ export const InitialsLogo: FC<initialsLogo> = ({ styles }) => {
     <>
       <strong className={styles}>
         <Link href='/'>
-          <div className='hover:animate-logo-spin text-2xl mr-[0.5vw]'>
+          <div className='hover:animate-logo-spin text-2xl mt-[0.6rem] mr-[0.5vw]'>
             <Logo className='text-6xl h-6' />
           </div>
         </Link>
