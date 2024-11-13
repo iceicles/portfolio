@@ -31,7 +31,7 @@ const Header: FC<{}> = ({}) => {
                     href={el.href}
                     styles={
                       isActive(el.href, pathname)
-                        ? 'active-link'
+                        ? 'active-link font-bold'
                         : 'hover:hover-link'
                     }
                   />
