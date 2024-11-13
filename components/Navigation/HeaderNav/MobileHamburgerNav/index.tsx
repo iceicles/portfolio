@@ -66,7 +66,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
         <>
           <div className='fixed top-0 h-screen overflow-y-auto overflow-x-hidden z-50 inset-0 h-[calc(100%-1rem)] transition-all'>
             <div
-              className='relative p-4 w-[50vw] h-full max-w-[50%] bg-black opacity-75'
+              className='relative p-4 w-[50vw] h-full max-w-[50%] bg-black opacity-90'
               ref={modalRef}
             >
               <nav>
@@ -78,7 +78,9 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
                         value={el.value}
                         href={el.href}
                         styles={
-                          isActive(el.href, pathname) ? 'active-link' : ''
+                          isActive(el.href, pathname)
+                            ? 'active-link italic font-bold'
+                            : ''
                         }
                       />
                     );
