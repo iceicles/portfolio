@@ -22,7 +22,7 @@ export const useIsMobile = () => {
 
         return () => window.removeEventListener('resize', resizeWindow)
        
-    }, [])
+    }, [resizeWindow])
 
     return windowWidth <= breakpoint
 }
