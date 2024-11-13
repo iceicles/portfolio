@@ -21,6 +21,26 @@ body {
 }
 
 @layer utilities {
+  /* Customize scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #1f2937; /* Custom scrollbar thumb color */
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* Custom scrollbar track color */
+  }
+
+  /* You can also style scrollbar for Firefox */
+  html {
+    scrollbar-width: auto;
+    scrollbar-color: #1f2937 #000000; /* thumb color and track color for Firefox */
+  }
+
   /* contains some group of styles relating to profile pic */
   .profile-pic {
     shape-outside: circle(46%);
@@ -32,9 +52,9 @@ body {
 
   /* custom scrollbar styles */
   .custom-scrollbar {
-    scrollbar-width: thin; /* makes the scrollbar thinner */
-    scrollbar-color: #012760 #000000; /* thumb color and track color */
-    overscroll-behavior-y: contain;
+    scrollbar-width: auto; /* makes the scrollbar thinner */
+    scrollbar-color: #1f2937 #000000; /* thumb color and track color */
+    overscroll-behavior-y: contain; /* ensures scrolling only happens on the modal and not the background as well */
     overflow-y: scroll;
     overflow: auto; /* ensures that scrolling happens only when necessary (i.e., if there's content to be scrolled to) */
   }
@@ -45,7 +65,7 @@ body {
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #012760;
+    background-color: #1f2937;
     border-radius: 0.625rem;
   }
 
