@@ -41,7 +41,7 @@ const Modal: FC<Modal> = ({
           >
             <div className='relative rounded-lg shadow'>
               <div className='flex flex-col sm:flex-row items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600'>
-                <h3 className='text-4xl max-w-lg self-start sm:self-auto'>
+                <h3 className='text-4xl max-w-lg self-start sm:self-auto sm:w-[70%] md:w-auto'>
                   {modalContent.title}
                 </h3>
                 <div className='flex flex-col self-start sm:self-auto'>
