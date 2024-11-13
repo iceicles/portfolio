@@ -7,7 +7,7 @@ const listItemClass = 'list-[square] bg-gray-900 rounded-xl p-2.5'
 export const AboutModalContent: AboutMeModalContent[] = [
     {
         id: 1,
-        title: 'React - Front-end Engineer | Product Engineering',
+        title: 'Front-end Engineer | Product Engineering',
         description: `
         <ul class='${listClass}'>
             <li class='${listItemClass}'>
