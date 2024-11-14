@@ -71,7 +71,7 @@ const MainSection = () => {
             className='active-link'
           >
             SAS Institute
-          </a>
+          </a>{' '}
           as an IT technician, where I honed my skills in bash scripting,
           tackling computer and server related problems, and providing
           user-centric solutions.{' '}
