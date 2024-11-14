@@ -1,7 +1,7 @@
 import { AboutMeModalContent } from "../../types/AboutMeModalContent";
 
 const listClass = 'flex flex-col gap-2.5'
-const listItemClass = 'list-[square] bg-gray-900 rounded-xl p-2.5'
+const listItemClass = 'list-none bg-gray-900 rounded-xl p-2.5'
 
 
 export const AboutModalContent: AboutMeModalContent[] = [

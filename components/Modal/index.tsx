@@ -76,7 +76,7 @@ const Modal: FC<Modal> = ({
                   }}
                   className='p-4 pr-0 sm:pr-20'
                 ></p>
-                <span className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col sm:justify-evenly h-4'>
+                <span className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4'>
                   {modalContent.tools?.map((tools, _id) => (
                     // todo - hmm not sure why i can't use modalContent.id here...
                     <p

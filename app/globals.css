@@ -134,4 +134,17 @@ body {
     text-decoration-color: #1f2937;
     text-underline-offset: 0.25rem;
   }
+
+  /* li::marker {
+    color: #1f2937;
+    list-style-position: outside;
+  }
+
+  li:before{ 
+    content:'\00b7'; 
+    font-size: 75px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #1f2937;
+  } */
 }
