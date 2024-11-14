@@ -36,14 +36,12 @@ const MainSection: FC<{}> = ({}) => {
           reset(); // clear form
         },
         (error) => {
-          console.log('FAILED...', error.text);
           alert('There was an error, please try again');
           reset();
+          // TODO: handle error later
         }
       );
   };
-
-  console.log('errors - ', errors);
 
   const errorMessages: IFormErrorInputs = {
     nameError: errors.name?.message,
