@@ -16,11 +16,11 @@ const Header: FC<{}> = ({}) => {
   return (
     <>
       {isMobile ? (
-        <div className='flex align-element justify-end p-4 mb-[10vh] relative'>
+        <div className='flex justify-end p-4 mb-[10vh] relative'>
           <MobileHamburgerNav />
         </div>
       ) : (
-        <div className='flex align-element justify-center py-4 sm:gap-x-16 sm:items-center sm:py-8 relative mb-[8vh] desktop-lg:mb-[15vh]'>
+        <div className='flex justify-center items-center py-4 sm:gap-x-16 sm:py-8 relative mb-[8vh] desktop-lg:mb-[15vh]'>
           <nav>
             <ul className='flex gap-10'>
               <>
