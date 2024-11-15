@@ -28,6 +28,7 @@ const ContactForm: FC<ContactForm> = ({
   const labelClass = 'flex flex-col gap-[0.625rem] font-bold';
   const inputClass =
     'border-solid border-2 border-white bg-transparent p-[0.5rem] italic';
+  const errorClass = 'text-red-500 block h-2 pt-1';
 
   return (
     <div className='m-auto max-w-3xl'>
@@ -44,7 +45,7 @@ const ContactForm: FC<ContactForm> = ({
                 required: 'Name is required',
                 minLength: {
                   value: 3,
-                  message: 'Name has to be more than 3 characters',
+                  message: 'Please ensure name is more than 3 characters',
                 },
               })}
               name={name}
@@ -53,9 +54,7 @@ const ContactForm: FC<ContactForm> = ({
               className={inputClass}
             ></input>
           </label>
-          {errors && (
-            <span className='text-red-500 block h-2'>{errors.nameError}</span>
-          )}
+          {errors && <span className={errorClass}>{errors.nameError}</span>}
         </div>
         <div>
           <label className={labelClass}>
@@ -68,9 +67,7 @@ const ContactForm: FC<ContactForm> = ({
               className={inputClass}
             ></input>
           </label>
-          {errors && (
-            <span className='text-red-500 block h-2'>{errors.emailError}</span>
-          )}
+          {errors && <span className={errorClass}>{errors.emailError}</span>}
         </div>
         <div className='w-[100%]'>
           <label className={labelClass}>
@@ -83,11 +80,7 @@ const ContactForm: FC<ContactForm> = ({
               className='border-solid border-2 border-white bg-transparent w-[100%] p-[0.5rem] italic'
             ></textarea>
           </label>
-          {errors && (
-            <span className='text-red-500 block h-2'>
-              {errors.messageError}
-            </span>
-          )}
+          {errors && <span className={errorClass}>{errors.messageError}</span>}
         </div>
         <input
           type='submit'
