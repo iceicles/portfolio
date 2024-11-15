@@ -51,7 +51,7 @@ export const AboutModalContent: AboutMeModalContent[] = [
     },
     {
         id: 3,
-        title: 'DevOps Analyst | Cloud Operations & Automation',
+        title: 'DevOps Engineer | Cloud Operations & Automation',
         description: `
         <ul class='${listClass}'>
             <li class='${listItemClass}'>
