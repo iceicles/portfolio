@@ -1,5 +1,5 @@
 'use client';
-import React, { FC, MutableRefObject } from 'react';
+import React, { FC, MutableRefObject, useEffect, useState } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
 import Link from 'next/link';
 import { Close, CTCLogo } from '../Icons';
@@ -21,14 +21,25 @@ const Modal: FC<Modal> = ({
   modalContent,
   modalRef,
 }) => {
+  /* note: 
+  - added 'use client' here bc we're using dangerouslySetInnerHTML
+  - DOMPurify relies on browser-specific APIs and calling DOMPurify.santize() on the server causes issues as it needs to only run on the client. Remember, nextJS runs on both server and client */
+
+  const [sanitizedDescriptionContent, setSanitizedDescriptionContent] =
+    useState('');
+
+  useEffect(() => {
+    if (modalContent?.description) {
+      setSanitizedDescriptionContent(
+        DOMPurify.sanitize(modalContent.description)
+      );
+    }
+  }, [modalContent]);
+
   const tagBorderClass =
     'border-gray-800 bg-gray-800 border-2 border-dotted rounded p-1 w-fit lg:w-inherit h-fit self-center';
 
   const isMobile = useIsMobile();
-
-  const description = modalContent.description;
-  // note: added 'use client' here bc we're using dangerouslySetInnerHTML
-  const sanitizedDescriptionContent = DOMPurify.sanitize(description);
 
   return (
     <>
