@@ -57,7 +57,7 @@ const MainSection = () => {
 
         <p className={paragraphStyles}>
           Within CTC, I have worn multiple hats, first of which was a{' '}
-          <strong>DevOps Analyst</strong> role with the Cloud Operations and
+          <strong>DevOps Engineer</strong> role with the Cloud Operations and
           Automation Team. During my time there, I automated operating systems
           for patching on servers and created dashboards to monitor server
           functionality and filter through lengthy (mostly unecessary) log

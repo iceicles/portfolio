@@ -23,7 +23,7 @@ export const AboutMeCards: AboutMeCard[] = [
     },
     {
         id: 3,
-        title: 'DevOps Analyst',
+        title: 'DevOps Engineer',
         href: 'https://www.canadiantire.ca/en.html',
         description: 'Description',
         workplace: 'Canadian Tire',
