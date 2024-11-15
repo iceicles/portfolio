@@ -1,3 +1,5 @@
+// contains interfaces shared in multiple components
+
 export interface IFormValues {
   name: string;
   email: string;
