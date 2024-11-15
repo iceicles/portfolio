@@ -62,7 +62,7 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Automated Operating System patching on servers keeping the machines updated with security fixes and critical bug fixes
             </li>
         </ul>`,
-        tools: ['Python', 'Rundeck', 'Ansible', 'YAML'],
+        tools: ['Python', 'Rundeck', 'Ansible', 'YAML', 'Terraform'],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
         yearsActive: 'Jun/’19 - Jan/’20'
