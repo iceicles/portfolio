@@ -13,6 +13,7 @@ Other languages, Javascript, Typescript
 - DOMPurify
 - React type animation
 - React hook form
+- EmailJS
 
 ## Production
 
