@@ -40,7 +40,7 @@ Used the guideline - https://medium.com/@mertenercan/nextjs-13-folder-structure-
 
 - global constants
 
-  -
+  - self explanatory lol
 
 - types
 
