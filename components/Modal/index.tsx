@@ -1,3 +1,4 @@
+'use client';
 import React, { FC, MutableRefObject } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
 import Link from 'next/link';
@@ -26,6 +27,7 @@ const Modal: FC<Modal> = ({
   const isMobile = useIsMobile();
 
   const description = modalContent.description;
+  // note: added 'use client' here bc we're using dangerouslySetInnerHTML
   const sanitizedDescriptionContent = DOMPurify.sanitize(description);
 
   return (
@@ -33,7 +35,7 @@ const Modal: FC<Modal> = ({
       {show && (
         <div
           id='modal'
-          className='fixed flex justify-center items-center  overflow-y-auto overflow-x-hidden z-50 w-full h-full inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg transition-all'
+          className='fixed flex justify-center items-center  overflow-y-auto overflow-x-hidden z-50 w-full h-full inset-0 max-h-full backdrop-blur-lg transition-all'
         >
           <div
             ref={modalRef}
@@ -56,7 +58,7 @@ const Modal: FC<Modal> = ({
                   ) : (
                     ''
                   )}
-                  <div className='flex gap-[1rem] w-fit justify-between self-end mt-[15%] text-center w-[200px]'>
+                  <div className='flex gap-[1rem] w-fit justify-between self-end mt-[15%] text-center'>
                     <Link href={modalContent.jobHREF} target='_blank'>
                       {/* TODO: figure out a way to make add this to constant.ts file - makes it dynamic */}
                       <CTCLogo className='text-5xl' />
@@ -70,12 +72,12 @@ const Modal: FC<Modal> = ({
               </div>
 
               <div className='flex flex-col sm:flex-row p-4 md:p-5 space-y-4'>
-                <p
+                <div
                   dangerouslySetInnerHTML={{
                     __html: sanitizedDescriptionContent,
                   }}
                   className='p-4 pr-0 sm:pr-20'
-                ></p>
+                ></div>
                 <span className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4'>
                   {modalContent.tools?.map((tools, _id) => (
                     // todo - hmm not sure why i can't use modalContent.id here...
