@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import Link from 'next/link';
 import { InitialsLogo as Logo } from '../../Icons';
 
 interface initialsLogo {
@@ -8,7 +7,7 @@ interface initialsLogo {
 
 export const InitialsLogo: FC<initialsLogo> = ({ styles }) => {
   return (
-    <Link href='/'>
+    <a href='/'>
       <div
         className={`${
           !!styles ? styles : ''
@@ -16,6 +15,6 @@ export const InitialsLogo: FC<initialsLogo> = ({ styles }) => {
       >
         <Logo className='text-6xl h-6' />
       </div>
-    </Link>
+    </a>
   );
 };

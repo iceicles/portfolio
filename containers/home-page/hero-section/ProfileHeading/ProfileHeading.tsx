@@ -1,6 +1,4 @@
-'use client';
 import React, { FC } from 'react';
-import Link from 'next/link';
 import InfoSection from '../../info-section';
 
 const ProfileHeading: FC<{}> = ({}) => {
@@ -19,13 +17,13 @@ const ProfileHeading: FC<{}> = ({}) => {
       <p className='text-[clamp(1rem,.6rem+2vw,1.6rem)] mb-[calc(1.5rem*2)]'>
         <i>
           I currently live in Toronto, Ontario, and work for {}
-          <Link
+          <a
             href='https://www.canadiantire.ca/en.html'
             target='_blank'
             className='underline decoration-4 md:decoration-8 decoration-gray-800'
           >
             Canadian Tire
-          </Link>
+          </a>
           {} as a front end engineer
         </i>
       </p>

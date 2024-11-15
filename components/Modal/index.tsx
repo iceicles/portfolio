@@ -1,7 +1,6 @@
 'use client';
 import React, { FC, MutableRefObject, useEffect, useState } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
-import Link from 'next/link';
 import { Close, CTCLogo } from '../Icons';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import DOMPurify from 'dompurify';
@@ -70,11 +69,11 @@ const Modal: FC<Modal> = ({
                     ''
                   )}
                   <div className='flex gap-[1rem] w-fit justify-between self-end mt-[15%] text-center'>
-                    <Link href={modalContent.jobHREF} target='_blank'>
+                    <a href={modalContent.jobHREF} target='_blank'>
                       {/* TODO: figure out a way to make add this to constant.ts file - makes it dynamic */}
                       <CTCLogo className='text-5xl' />
                       {/* {modalContent.workplace} */}
-                    </Link>
+                    </a>
                     <span className={tagBorderClass}>
                       {modalContent.yearsActive}
                     </span>
