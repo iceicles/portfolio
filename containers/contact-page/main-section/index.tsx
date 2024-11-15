@@ -21,14 +21,14 @@ const MainSection: FC<{}> = ({}) => {
 
   const form = useRef<HTMLFormElement | null>(null);
 
-  const emailjs_service_id = process.env.NEXT_PUBLIC_SERVICE_ID || '';
-  const emailjs_template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
-  const emailjs_public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY || '';
+  const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID || '';
+  const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || '';
+  const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || '';
 
   const onSubmit: SubmitHandler<IFormValues> = () => {
     emailjs
-      .sendForm(emailjs_service_id, emailjs_template_id, form.current!, {
-        publicKey: emailjs_public_key,
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current!, {
+        publicKey: EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
