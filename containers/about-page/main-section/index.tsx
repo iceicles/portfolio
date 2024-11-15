@@ -10,7 +10,7 @@ const MainSection = () => {
       <div className='w-[80vw] lg:w-[50vw] lg:ml-[10vw] block self-center gap-0'>
         <ProfilePicture additionalClass='float-left profile-pic' />
         <p className={paragraphStyles}>
-          Hi there! I'm a <strong>Frontend Engineer</strong> at{' '}
+          Hi there! I'm a <strong>Front-end Engineer</strong> at{' '}
           <a
             href='https://www.canadiantire.ca/en.html'
             target='_blank'
@@ -19,8 +19,8 @@ const MainSection = () => {
             Canadian Tire Corporation
           </a>{' '}
           (CTC), where I specialize in crafting intuitive, responsive, and
-          visually appealing web applications. I have worked on various features
-          including:
+          visually appealing web applications. Some of the features I've worked
+          on include:
         </p>
         <p className={`${paragraphStyles} italic`}>
           Single Sign-On (SSO) functionality for authenticating users once
