@@ -4,6 +4,8 @@ import { FooterNavs } from './constant';
 import { InitialsLogo } from '../Logo/InitialsLogo';
 
 const Footer: FC<{}> = ({}) => {
+  const date = new Date();
+
   return (
     <>
       <div className='overflow-hidden max-w-[100vw]'>
@@ -24,7 +26,7 @@ const Footer: FC<{}> = ({}) => {
             </div>
 
             <div className='block text-sm lg:text-center mt-4 ml-2 lg:ml-0'>
-              © 2024 Crafted by {}
+              © {date.getFullYear()} Crafted by {}
               <Link
                 href='https://github.com/iceicles'
                 target='_blank'
