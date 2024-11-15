@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Tools
 
-## Getting Started
+---
 
-First, run the development server:
+Framework: NextJS
+Library: React, Tailwind
+Other languages, Javascript, Typescript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Third-party libraries
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- DOMPurify
+- React type animation
+- React hook form
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+- Deployed via Cloudflare (Nov 15, 4:30pm)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Struture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+Used the guideline - https://medium.com/@mertenercan/nextjs-13-folder-structure-c3453d780366
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - routes for different pages - /about, /tools etc
+
+- components
+
+  - different types of components include (buttons, cards, header, footer, forms, etc)
+
+- containers
+
+  - pages sub components (for example, home page can have a hero section but contact page may not need one)
+
+- global constants
+
+  -
+
+- types
+
+  - expected properties and values for data
+
+- utils
+
+  - any one of functions that can be used in multiple components
+
+- interface
+  - shared interface within multiple components
+
+## Some final thoughts:
+
+- First app built with NextJS, Tailwind, and deployed using Cloudflare
+- Used /src folder at first, deleted it and prefer this way
+- As for the project structure, I've come to not like the splitting of components into containers and also components. I feel
+  as though the components folder should suffice to store component-page-related code.
+  For instance:
+  Components folder
+  -> UI -> Card, Footer, Buttons, etc...
+  -> Some other component
+  -> home-page -> Header, Footer, Some other component, etc...
+  -> about-page -> Header, Footer, Some other compnent, etc...
+  and so on...
+  The goal is to open a page, for ex., home page, and see every components related to it instead of having it split into another folder like the Components folder
