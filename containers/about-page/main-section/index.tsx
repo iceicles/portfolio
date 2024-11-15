@@ -20,7 +20,7 @@ const MainSection = () => {
           </a>{' '}
           (CTC), where I specialize in crafting intuitive, responsive, and
           visually appealing web applications. I have worked on various features
-          including -
+          including:
         </p>
         <p className={`${paragraphStyles} italic`}>
           Single Sign-On (SSO) functionality for authenticating users once
