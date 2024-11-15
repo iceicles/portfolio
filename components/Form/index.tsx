@@ -85,7 +85,7 @@ const ContactForm: FC<ContactForm> = ({
         <input
           type='submit'
           value='Send'
-          className='self-start font-bold cursor-pointer border-solid border-2 border-white bg-transparent px-[2rem] py-[0.5rem]'
+          className='self-start font-bold cursor-pointer border-solid border-2 border-white px-[2rem] py-[0.5rem] bg-gray-800 hover:bg-gray-700 active:bg-gray-600'
         ></input>
       </form>
     </div>
