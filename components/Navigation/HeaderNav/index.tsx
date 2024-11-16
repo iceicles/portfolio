@@ -10,9 +10,7 @@ interface HeaderNavProps {
 export const HeaderNav: FC<HeaderNavProps> = ({ value, href, styles }) => {
   return (
     <li className={styles}>
-      <Link href={href} className='block w-full'>
-        {value}
-      </Link>
+      <Link href={href}>{value}</Link>
     </li>
   );
 };

@@ -2,10 +2,3 @@ name = "portfolio"
 compatibility_date = "2024-11-15"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
-
-
-[vars]
-NEXT_PUBLIC_EMAILJS_SERVICE_ID ='service_ihalued'
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID='template_hj6qb7u'
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY='n3JOc96YfZMZumS9t'
-NODE_VERSION='20.18.0'
