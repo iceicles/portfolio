@@ -79,7 +79,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
                         href={el.href}
                         styles={
                           isActive(el.href, pathname)
-                            ? 'no-underline font-bold bg-gray-800'
+                            ? 'no-underline font-bold bg-gray-800 p-1 rounded'
                             : ''
                         }
                       />

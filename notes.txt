@@ -9,6 +9,7 @@ Third-party libraries
 - DOMPurify
 - React type animation
 - React hook form
+- EmailJS
 
 Production
 -------------
@@ -28,7 +29,7 @@ Used the guideline - https://medium.com/@mertenercan/nextjs-13-folder-structure-
     - pages sub components (for example, home page can have a hero section but contact page may not need one)
 
 - global constants
-    - 
+    - self explanatory lol
 
 - types
     - expected properties and values for data

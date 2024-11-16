@@ -13,6 +13,7 @@ Other languages, Javascript, Typescript
 - DOMPurify
 - React type animation
 - React hook form
+- EmailJS
 
 ## Production
 
@@ -40,7 +41,7 @@ Used the guideline - https://medium.com/@mertenercan/nextjs-13-folder-structure-
 
 - global constants
 
-  -
+  - self explanatory lol
 
 - types
 
