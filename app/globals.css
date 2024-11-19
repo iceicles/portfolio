@@ -135,6 +135,34 @@ body {
     text-underline-offset: 0.25rem;
   }
 
+  /* used to hide header nav on scroll in mobile */
+  .header-nav {
+    position: sticky;
+    top: 0;
+    transition: transform 1s ease-in-out;
+  }
+
+  .hide-header-nav {
+    /* transition: transform 1s ease-in-out; */
+    transform: translateY(-100%);
+  }
+
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: -100%; /* start off-screen */
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: left 0.5s ease-in-out; /* smooth transition for sliding */
+    z-index: 50;
+  }
+
+  /* If modal is open, slide it in */
+  .side-nav.open {
+    left: 0;
+  }
+
   /* li::marker {
     color: #1f2937;
     list-style-position: outside;
