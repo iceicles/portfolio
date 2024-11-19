@@ -17,7 +17,7 @@ export const ProfilePicture: FC<ProfilePicProps> = ({ additionalClass }) => {
           width={350}
           height={350}
         />
-        <pre className='absolute -rotate-[57deg] w-[160px] h-[120px] md:h-[163px] lg:w-[250px] lg:h-[160px] text-gray-500'>
+        <pre className='absolute -rotate-[57deg] top-[2vh] bottom-[-15vh] md:top-[6vh] lg:top-[8vh] text-gray-500'>
           <span className='absolute rotate-90 top-[5px] left-[-20px]'>
             <Arrow />
           </span>
