@@ -5,7 +5,7 @@ export const AboutMeCards: AboutMeCard[] = [
     {
         id: 1,
         isCurrent: true,
-        title: 'Frontend Engineer',
+        title: 'Front-end Engineer',
         href: 'https://www.canadiantire.ca/en.html',
         description: 'Description',
         workplace: 'Canadian Tire',
