@@ -5,6 +5,7 @@ import MainSection from '../../containers/about-page/main-section';
 import TimelineSection from '../../containers/about-page/timeline-section';
 import { AboutModalContent } from './constant';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
+import { usePathname } from 'next/navigation';
 
 export default function About() {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -74,6 +75,13 @@ export default function About() {
       document.removeEventListener('keydown', handleEscape);
     };
   }, [closeModal]);
+
+  const pathname = usePathname();
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0); // Scroll to top after all resources are loaded
+    }
+  }, [pathname]);
 
   return (
     <>

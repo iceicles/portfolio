@@ -1,8 +1,16 @@
 'use client';
-import React, { FC } from 'react';
+import { usePathname } from 'next/navigation';
+import React, { FC, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const Projects: FC<{}> = ({}) => {
+  const pathname = usePathname();
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0); // Scroll to top after all resources are loaded
+    }
+  }, [pathname]);
+
   return (
     <div className='flex items-center justify-center'>
       <TypeAnimation
