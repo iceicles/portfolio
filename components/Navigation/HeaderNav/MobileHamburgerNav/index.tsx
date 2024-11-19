@@ -8,6 +8,9 @@ import { isActive } from '../../../../utils/isActive';
 
 export const MobileHamburgerNav: FC<{}> = ({}) => {
   const [showModal, setShowModal] = useState(false);
+  const [scrollData, setScrollData] = useState({ y: 0, lastY: 0 });
+  const [showLogo, setShowLogo] = useState<boolean>(true);
+  const [hideNav, setHideNav] = useState<boolean>(false);
 
   const modalRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,10 +41,6 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
     setShowModal(false);
   }, [pathname]);
 
-  const [scrollData, setScrollData] = useState({ y: 0, lastY: 0 });
-  const [showLogo, setShowLogo] = useState<boolean>(true);
-  const [hideNav, setHideNav] = useState<boolean>(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollData((prev) => {
@@ -50,7 +49,6 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
           lastY: prev.y,
         };
       });
-      setHideNav(true);
     };
 
     window.addEventListener('scroll', handleScroll);
