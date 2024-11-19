@@ -1,5 +1,5 @@
 'use client';
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { HeaderNavs } from './constants';
 import { HeaderNav } from '../Navigation/HeaderNav';
 import { useIsMobile } from '../../hooks/useIsMobile';
@@ -16,9 +16,7 @@ const Header: FC<{}> = ({}) => {
   return (
     <>
       {isMobile ? (
-        <div className='flex justify-end p-4 mb-[10vh] relative'>
-          <MobileHamburgerNav />
-        </div>
+        <MobileHamburgerNav />
       ) : (
         <div className='flex justify-center items-center py-4 sm:gap-x-16 sm:py-8 relative mb-[8vh] desktop-lg:mb-[15vh]'>
           <nav>
