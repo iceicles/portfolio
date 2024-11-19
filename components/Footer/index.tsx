@@ -37,7 +37,7 @@ const Footer: FC<{}> = ({}) => {
               target='_blank'
               className='hover:underline hover:decoration-gray-800 hover:decoration-4 relative group animate-pulse'
             >
-              Iceicles{' '}
+              iceicles{' '}
               <span className='absolute left-[3rem] group-hover:no-underline'>
                 <span className='text-red-800'>❤️</span>
               </span>

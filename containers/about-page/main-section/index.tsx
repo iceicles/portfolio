@@ -10,7 +10,7 @@ const MainSection = () => {
       <div className='w-[80vw] lg:w-[50vw] lg:ml-[10vw] block self-center gap-0'>
         <ProfilePicture additionalClass='float-left profile-pic' />
         <p className={paragraphStyles}>
-          Hi there! I'm a <strong>Front-end Engineer</strong> at{' '}
+          I'm a <strong>Front-end Engineer</strong> at{' '}
           <a
             href='https://www.canadiantire.ca/en.html'
             target='_blank'
