@@ -39,13 +39,13 @@ const ContactForm: FC<ContactForm> = ({
       >
         <div>
           <label className={labelClass}>
-            Your name:
+            Your Name:
             <input
               {...register(name, {
                 required: 'Name is required',
                 minLength: {
                   value: 3,
-                  message: 'Please ensure name is more than 3 characters',
+                  message: 'Ensure name is more than 3 characters',
                 },
               })}
               name={name}
