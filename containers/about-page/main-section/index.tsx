@@ -56,7 +56,7 @@ const MainSection = () => {
         </p>
 
         <p className={paragraphStyles}>
-          Within CTC, I have worn multiple hats, first of which was a{' '}
+          I have worn many hats at CTC, first of which was a{' '}
           <strong>DevOps Engineer</strong> role with the Cloud Operations and
           Automation Team. During my time there, I automated operating systems
           for patching on servers and created dashboards to monitor server
