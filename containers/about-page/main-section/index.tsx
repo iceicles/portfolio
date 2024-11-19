@@ -95,21 +95,23 @@ const MainSection = () => {
           When I’m not coding, you’ll likely find me, playing a video game or
           immersed in music – I’m a long-time drummer, fairly new harmonica
           player, and I dabble in the piano as well. My taste in music is
-          diverse, but I have a special place for hip hop, whether it's
+          diverse, with a strong preference for hip hop, whether it's
           discovering new tracks or revisiting old classics.
         </p>
 
         <p className={paragraphStyles}>
-          I also make sure to balance my life with a healthy routine. I’m an
-          avid believer in working out, following a Push/Pull/Legs (PPL) routine
-          to stay fit. I also enjoy experimenting with new food recipes, and
-          unwinding with a good book - lately, I’ve been getting into more into
-          sci-fi books.
-        </p>
-
-        <p className={paragraphStyles}>
-          At my core, I'm someone who is curious and thrives on learning -
-          whether it's new technologies, new music, food recipes, or new ideas.
+          I also make sure to balance my life with a healthy workout routine,
+          following a{' '}
+          <a
+            href='https://www.muscleandstrength.com/workouts/6-day-powerbuilding-split-meal-plan'
+            target='_blank'
+            className='active-link'
+          >
+            Push/Pull/Legs (PPL)
+          </a>{' '}
+          program to stay fit. I also enjoy experimenting with new food recipes,
+          and unwinding with a good book - lately, I’ve been getting more into
+          sci-fi.
         </p>
       </div>
     </>
