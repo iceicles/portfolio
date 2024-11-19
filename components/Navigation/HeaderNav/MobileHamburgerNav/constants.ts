@@ -4,8 +4,8 @@ import { MobileBurgerNav } from "../../../../types/MobileBurgerNav"
 export const MobileHamburgerNavs: MobileBurgerNav[] = [
     {
         id: 1,
-        value: 'Projects',
-        href: '/my-projects'
+        value: 'Contact',
+        href: '/contact'
     },
     {
         id: 2,
@@ -14,8 +14,8 @@ export const MobileHamburgerNavs: MobileBurgerNav[] = [
     },
     {
         id: 3,
-        value: 'Contact',
-        href: '/contact'
+        value: 'Projects',
+        href: '/my-projects'
     },
     {
         id: 4,
