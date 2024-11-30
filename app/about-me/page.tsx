@@ -85,7 +85,7 @@ export default function About() {
 
   return (
     <>
-      <div className='flex flex-col lg:flex-row justify-evenly'>
+      <div className='flex flex-col lg:flex-row justify-evenly relative'>
         <MainSection />
         <TimelineSection showModal={onModalClick} />
       </div>
