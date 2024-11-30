@@ -8,7 +8,7 @@ interface ProfilePicProps {
 
 export const ProfilePicture: FC<ProfilePicProps> = ({ additionalClass }) => {
   return (
-    <div>
+    <div className='relative'>
       <a download href='/Resume.pdf'>
         <Image
           className={`p-4 rounded-[50%] border-dotted border-2 hover:animate-bounce2 border-gray-800 ${additionalClass}`}
@@ -17,7 +17,7 @@ export const ProfilePicture: FC<ProfilePicProps> = ({ additionalClass }) => {
           width={350}
           height={350}
         />
-        <pre className='absolute h-fit -rotate-[57deg] top-[40px] left-[10px] sm:top-[60px] sm:left-[55px] md:top-[65px] md:left-[65px] lg:top-[90px] lg:left-[unset] text-gray-500'>
+        <pre className='absolute h-fit -rotate-[57deg] top-[40px] left-[-25px] sm:top-[60px] sm:left-[-20px] md:top-[75px] md:left-[-15px] lg:top-[90px] lg:left-[unset] text-gray-500'>
           <span className='absolute rotate-90 top-[5px] left-[-20px]'>
             <Arrow />
           </span>
