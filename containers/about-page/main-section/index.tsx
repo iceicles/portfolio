@@ -7,7 +7,7 @@ const MainSection = () => {
     'h-fit rounded p-0.5 bg-gray-900 sm:mb-[0.625rem] sm:last:mb-0';
   return (
     <>
-      <div className='w-[80vw] lg:w-[50vw] lg:ml-[10vw] block self-center gap-0'>
+      <section className='w-[80vw] lg:w-[50vw] lg:ml-[10vw] block self-center gap-0'>
         <ProfilePicture additionalClass='float-left profile-pic' />
         <p className={paragraphStyles}>
           I'm a <strong>Front-end Engineer</strong> at{' '}
@@ -113,7 +113,7 @@ const MainSection = () => {
           and unwinding with a good book - lately, I’ve been getting more into
           sci-fi.
         </p>
-      </div>
+      </section>
     </>
   );
 };

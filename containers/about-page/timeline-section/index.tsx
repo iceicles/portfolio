@@ -8,7 +8,7 @@ interface TimelineSection {
 
 const TimelineSection: FC<TimelineSection> = ({ showModal }) => {
   return (
-    <div className='flex flex-col sm:flex-row lg:flex-col mx-12 mt-12 sm:m-auto sm:mt-12 gap-4 md:gap-[5vw] justify-evenly sm:flex-wrap'>
+    <section className='flex flex-col sm:flex-row lg:flex-col mx-12 mt-12 sm:m-auto sm:mt-12 gap-4 md:gap-[5vw] justify-evenly sm:flex-wrap'>
       {AboutMeCards.map((card) => (
         <React.Fragment key={card.id}>
           <AboutMeCardShort
@@ -19,7 +19,7 @@ const TimelineSection: FC<TimelineSection> = ({ showModal }) => {
           />
         </React.Fragment>
       ))}
-    </div>
+    </section>
   );
 };
 
