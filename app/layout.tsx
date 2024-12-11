@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Moses Umogbai',
-  description: 'Fullstack web, mobile, and game developer',
+  description: 'Software Engineer - Fullstack web, mobile, and game developer',
 };
 
 export default function RootLayout({
