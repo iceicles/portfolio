@@ -82,14 +82,14 @@ const Modal: FC<Modal> = ({
                 </div>
               </div>
 
-              <div className='flex flex-col sm:flex-row p-4 md:p-5 space-y-4'>
+              <div className='flex flex-col sm:flex-row p-4 md:p-5'>
                 <div
                   dangerouslySetInnerHTML={{
                     __html: sanitizedDescriptionContent,
                   }}
                   className='p-4 pr-0 sm:pr-20'
                 ></div>
-                <section className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4'>
+                <section className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4 p-4'>
                   {modalContent.tools?.map((tool, _id) => (
                     // todo - hmm not sure why i can't use modalContent.id here...
                     <div
