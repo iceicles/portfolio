@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
-import { Arrow } from '../../../../components/Icons';
+import { Arrow } from '../../../../components/SVG';
 
 interface ProfilePicProps {
   additionalClass?: string;

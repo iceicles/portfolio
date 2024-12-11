@@ -18,8 +18,6 @@ export const AboutMeCards: AboutMeCard[] = [
         description: 'Description',
         workplace: 'Canadian Tire',
         yearsActive: 'Feb 2020 - Sept 2020',
-        isTools: true,
-        tools: ['Java', 'MVC/FLUX', 'Android Studio', 'XML']
     },
     {
         id: 3,

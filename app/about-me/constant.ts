@@ -1,3 +1,4 @@
+import { tools } from "../../enums/tools.enum";
 import { AboutMeModalContent } from "../../types/AboutMeModalContent";
 
 const listClass = 'flex flex-col gap-2.5'
@@ -26,10 +27,10 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Worked on Sales Alerts functionality on the Buybox for products in user’s Wishlist generating an increase in sales and customer conversions
             </li>
         </ul>`,
-        tools: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'NextJS', 'Redux', 'NodeJS', 'ExpressJS', 'MongoDB', 'Firebase', 'Docker'],
+        tools: [tools.HTML, tools.CSS, tools.JavaScript, tools.TypeScript, tools.React, tools.NextJS, tools.Redux, tools.NodeJS, tools.ExpressJS, tools.MongoDB, tools.Firebase, tools.Docker],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
-        yearsActive: 'Oct/’20 - Now'
+        yearsActive: 'Oct/’20 - Current'
     },
     {
         id: 2,
@@ -44,7 +45,7 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Developed a new home screen as per design specifications improving user experience and personalization
             </li>
         </ul>`,
-        tools: ['Java', 'XML', 'Firebase'],
+        tools: [tools.Java, tools.XML, tools.AndroidStudio, tools.Firebase],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
         yearsActive: 'Feb/’20 - Sept/’20'
@@ -62,7 +63,7 @@ export const AboutModalContent: AboutMeModalContent[] = [
             Automated Operating System patching on servers keeping the machines updated with security fixes and critical bug fixes
             </li>
         </ul>`,
-        tools: ['Python', 'Rundeck', 'Ansible', 'YAML', 'Terraform'],
+        tools: [tools.Python, tools.Rundeck, tools.Ansible, tools.Terraform],
         jobHREF: 'https://www.canadiantire.ca/en.html',
         workplace: 'CTC',
         yearsActive: 'Jun/’19 - Jan/’20'

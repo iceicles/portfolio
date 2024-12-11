@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { InitialsLogo as Logo } from '../../Icons';
+import { InitialsLogo as Logo } from '../../SVG';
 import Link from 'next/link';
 
 interface initialsLogo {

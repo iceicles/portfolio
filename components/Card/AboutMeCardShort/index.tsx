@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { CTCLogo } from '../../Icons';
+import { CTCLogo } from '../../SVG';
 
 interface AboutMeCardShort {
   id: number;

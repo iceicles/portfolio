@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { InfoSectionNav } from '../../../components/Navigation/InfoSectionNav';
 import { InfoSectionNavs } from './constants';
-import { Github, LinkedIn, Twitter } from '../../../components/Icons';
+import { Github, LinkedIn, Twitter } from '../../../components/SVG';
 
 interface InfoSectionProps {}
 const InfoSection: FC<InfoSectionProps> = ({}) => {

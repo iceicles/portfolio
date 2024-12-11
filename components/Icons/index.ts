@@ -1,8 +1,0 @@
-export {default as LinkedIn} from './LinkedIn.svg'
-export {default as Twitter} from './Twitter.svg'
-export {default as Github} from './Github.svg'
-export {default as Close} from './Close.svg'
-export {default as Hamburger} from './Hamburger.svg'
-export {default as InitialsLogo} from './InitialsLogo.svg'
-export {default as Arrow} from './Arrow.svg'
-export {default as CTCLogo} from './CTCLogo.svg'

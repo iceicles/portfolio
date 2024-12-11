@@ -1,9 +1,10 @@
 'use client';
 import React, { FC, MutableRefObject, useEffect, useState } from 'react';
 import { AboutMeModalContent } from '../../types/AboutMeModalContent';
-import { Close, CTCLogo } from '../Icons';
+import { Close, CTCLogo } from '../SVG';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import DOMPurify from 'dompurify';
+import { ToolsIcon } from '../ToolsIcon';
 
 interface Modal {
   show: boolean;
@@ -88,17 +89,20 @@ const Modal: FC<Modal> = ({
                   }}
                   className='p-4 pr-0 sm:pr-20'
                 ></div>
-                <span className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4'>
-                  {modalContent.tools?.map((tools, _id) => (
+                <section className='flex flex-row flex-wrap sm:flex-nowrap justify-start gap-1 sm:flex-col h-4'>
+                  {modalContent.tools?.map((tool, _id) => (
                     // todo - hmm not sure why i can't use modalContent.id here...
-                    <p
+                    <div
                       key={_id}
-                      className='h-fit rounded p-0.5 bg-gray-900 sm:mb-[0.625rem] sm:last:mb-0'
+                      className='flex items-center justify-center gap-1 rounded p-2 bg-gray-900'
                     >
-                      {tools}
-                    </p>
+                      <ToolsIcon name={tool} />
+                      <p className=' bold h-fit self-center sm:mb-[0.625rem] w-max sm:last:mb-0'>
+                        {tool}
+                      </p>
+                    </div>
                   ))}
-                </span>
+                </section>
               </div>
               {children}
             </div>
