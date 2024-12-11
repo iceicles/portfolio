@@ -14,8 +14,8 @@ const ProfileHeading: FC<{}> = ({}) => {
         .
       </h1>
       <h2 className='text-[clamp(1.5rem,0.7rem+3vw,3.2rem)]'>
-        I'm a front-end web and mobile developer, hobbyist game developer, and
-        an enthusiast of music and fitness
+        I'm a software engineer, hobbyist game developer, and an enthusiast of
+        music and fitness
       </h2>
       <hr className='m-4 p-4 border-gray-800' />
       <p className='text-[clamp(1rem,.6rem+2vw,1.6rem)] mb-[calc(1.5rem*2)]'>
