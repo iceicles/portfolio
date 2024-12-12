@@ -2,9 +2,10 @@
 
 ---
 
-Framework: NextJS
-Library: React, Tailwind
-Other languages, Javascript, Typescript
+- React Framework: NextJS
+- JS Library: React
+- Styling Library: Tailwind
+- Coding Languages: Javascript, Typescript
 
 ## Third-party libraries
 
@@ -19,7 +20,7 @@ Other languages, Javascript, Typescript
 
 ---
 
-- Deployed via Cloudflare (Nov 15, 4:30pm)
+- Deployed via Cloudflare (Initial deployment: Nov 15, 4:30pm)
 
 ## Project Struture
 
