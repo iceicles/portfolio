@@ -44,8 +44,8 @@ const ContactForm: FC<ContactForm> = ({
               {...register(name, {
                 required: 'Name is required',
                 minLength: {
-                  value: 3,
-                  message: 'Ensure name is more than 3 characters',
+                  value: 2,
+                  message: 'Ensure name is at least 2 characters',
                 },
               })}
               name={name}
