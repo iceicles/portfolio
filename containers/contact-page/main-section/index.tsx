@@ -2,7 +2,7 @@
 import React, { FC, useRef } from 'react';
 import ContactForm from '../../../components/Form';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { IFormErrorInputs, IFormValues } from '../../../Interfaces/Form';
+import { IFormErrorInputs, IFormValues } from '../../../interfaces/Form';
 import emailjs from '@emailjs/browser';
 
 const MainSection: FC<{}> = ({}) => {

@@ -7,7 +7,8 @@ const Contact: FC<{}> = ({}) => {
   const pathname = usePathname();
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.scrollTo(0, 0); // Scroll to top after all resources are loaded
+      // scroll to top after all resources are loaded
+      window.scrollTo(0, 0);
     }
   }, [pathname]);
 

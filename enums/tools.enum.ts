@@ -2,6 +2,7 @@ export enum tools {
     // fullstack tools
     HTML = 'HTML',
     CSS = 'CSS',
+    Tailwind = 'Tailwind',
     JavaScript = 'JavaScript',
     TypeScript = 'TypeScript',
     React = 'React',
@@ -12,6 +13,8 @@ export enum tools {
     MongoDB = 'MongoDB',
     Firebase = 'Firebase',
     Docker = 'Docker',
+    Cloudinary = 'Cloudinary',
+    Puppeteer = 'Puppeteer',
     // android tools
     Java = 'Java',
     XML = 'XML',
