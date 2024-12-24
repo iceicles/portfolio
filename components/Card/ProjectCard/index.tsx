@@ -103,7 +103,7 @@ export function ProjectCard() {
 
                   <motion.a
                     layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
+                    //href={active.ctaLink}
                     target='_blank'
                     className='px-4 py-3 text-sm rounded-full font-bold bg-gray-800 hover:bg-gray-700 text-white'
                   >
@@ -222,7 +222,7 @@ const cards = [
     src: '/[project] picz.png',
     ctaPillText: '>',
     ctaText: 'View',
-    // ctaLink: 'https://picz-dev.vercel.app/',
+    //ctaLink: '#',
     content: () => {
       return (
         <p>
@@ -251,7 +251,7 @@ const cards = [
     src: '/placeholder-image.jpg',
     ctaPillText: '>',
     ctaText: 'View',
-    // ctaLink: 'https://picz-dev.vercel.app/',
+    //ctaLink: '#',
     content: () => {
       return (
         <p>
