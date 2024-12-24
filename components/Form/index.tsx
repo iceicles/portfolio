@@ -1,5 +1,6 @@
 import React, { FC, FormEventHandler, MutableRefObject } from 'react';
 import { Path, UseFormRegister } from 'react-hook-form';
+import { IFormErrorInputs, IFormValues } from '../../interfaces/Form';
 
 interface ContactForm {
   onSubmit():
