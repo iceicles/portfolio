@@ -15,14 +15,13 @@ const Projects: FC<{}> = ({}) => {
 
   return (
     <div className='flex flex-col items-center justify-center gap-9'>
-      {/* <MainSection /> */}
       <TypeAnimation
         sequence={[
           'Working on it...',
           2000,
           'In progress...',
           2000,
-          'Currently cooking...',
+          'Coming soon...',
           4000,
         ]}
         repeat={Infinity}
@@ -30,6 +29,7 @@ const Projects: FC<{}> = ({}) => {
         deletionSpeed={10}
         style={{ fontSize: '1.25rem' }}
       />
+      <MainSection />
     </div>
   );
 };

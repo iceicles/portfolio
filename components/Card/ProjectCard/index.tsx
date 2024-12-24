@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useOutsideClick } from '../../../hooks/useOutsideClick';
 import { ToolsIcon } from '../../ToolsIcon';
 
-export function ExpandableCard() {
+export function ProjectCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -69,7 +69,7 @@ export function ExpandableCard() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className='w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black sm:rounded-3xl overflow-hidden border-y'
+              className='w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black sm:rounded-3xl overflow-hidden lg:border-y'
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -145,7 +145,7 @@ export function ExpandableCard() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className='p-4 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/20 hover:border-button hover:animate-pulse2 cursor-pointer'
+            className='p-4 mb-2 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/30 cursor-pointer border border-solid lg:border-none'
           >
             <div className='flex gap-4 flex-col md:flex-row '>
               <motion.div
@@ -154,7 +154,7 @@ export function ExpandableCard() {
               >
                 <Image
                   width={100}
-                  height={100}
+                  height={50}
                   src={card.src}
                   alt={card.title}
                   className='h-auto w-auto object-contain object-center rounded-xl'
@@ -222,7 +222,7 @@ const cards = [
     src: '/[project] picz.png',
     ctaPillText: '>',
     ctaText: 'View',
-    ctaLink: 'https://picz-dev.vercel.app/',
+    // ctaLink: 'https://picz-dev.vercel.app/',
     content: () => {
       return (
         <p>
@@ -236,25 +236,32 @@ const cards = [
         </p>
       );
     },
-    ctaTools: ['HTML', 'Tailwind', 'React', 'Cloudinary'],
+    ctaTools: [
+      'HTML',
+      'Tailwind',
+      'React',
+      'NodeJS',
+      'ExpressJS',
+      'Cloudinary',
+    ],
   },
   {
     description: 'Convert Websites to PDF and/or Images',
     title: 'Website PDF & Image Generator',
-    src: '/[project] picz.png',
+    src: '/placeholder-image.jpg',
     ctaPillText: '>',
     ctaText: 'View',
-    ctaLink: 'https://picz-dev.vercel.app/',
+    // ctaLink: 'https://picz-dev.vercel.app/',
     content: () => {
       return (
         <p>
           By leveraging the power of Puppeteer, a headless browser automation
-          tool, the website scrapes the content of the provided URL and
-          generates a high-quality screenshot or a downloadable PDF. This
-          easy-to-use tool is perfect for saving webpages in a visual format,
-          archiving content, or sharing static versions of web pages with
-          others. Simply input the URL, choose your desired format, and download
-          the result in seconds.
+          tool, the <i>little</i> project scrapes the content of the provided
+          URL and generates a high-quality screenshot or a downloadable PDF.
+          This easy-to-use tool is perfect for saving webpages in a visual
+          format, archiving content, or sharing static versions of web pages
+          with others. Simply input the URL, choose your desired format, and
+          download the result in seconds.
         </p>
       );
     },
