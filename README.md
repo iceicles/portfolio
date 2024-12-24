@@ -4,7 +4,7 @@
 
 - React Framework: NextJS
 - JS Library: React
-- Styling Library: Tailwind
+- Styling Library: Tailwind, Framer Motion
 - Coding Languages: Javascript, Typescript
 
 ## Third-party libraries
