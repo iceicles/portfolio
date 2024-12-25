@@ -103,7 +103,7 @@ export function ProjectCard() {
 
                   <motion.a
                     layoutId={`button-${active.title}-${id}`}
-                    //href={active.ctaLink}
+                    href={active.ctaLink}
                     target='_blank'
                     className='px-4 py-3 text-sm rounded-full font-bold bg-gray-800 hover:bg-gray-700 text-white'
                   >
@@ -222,7 +222,7 @@ const cards = [
     src: '/[project] picz.png',
     ctaPillText: '>',
     ctaText: 'View',
-    //ctaLink: '#',
+    ctaLink: 'https://picz-dev.vercel.app/',
     content: () => {
       return (
         <p>
@@ -256,12 +256,12 @@ const cards = [
       return (
         <p>
           By leveraging the power of Puppeteer, a headless browser automation
-          tool, the <i>little</i> project scrapes the content of the provided
-          URL and generates a high-quality screenshot or a downloadable PDF.
-          This easy-to-use tool is perfect for saving webpages in a visual
-          format, archiving content, or sharing static versions of web pages
-          with others. Simply input the URL, choose your desired format, and
-          download the result in seconds.
+          tool, this project scrapes the content of the provided URL and
+          generates a high-quality screenshot or a downloadable PDF. This
+          easy-to-use tool is perfect for saving webpages in a visual format,
+          archiving content, or sharing static versions of web pages with
+          others. Simply input the URL, choose your desired format, and download
+          the result in seconds.
         </p>
       );
     },
