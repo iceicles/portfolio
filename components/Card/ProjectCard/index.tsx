@@ -157,7 +157,7 @@ export function ProjectCard() {
                   height={50}
                   src={card.src}
                   alt={card.title}
-                  className='h-auto w-auto object-contain object-center rounded-xl'
+                  className='object-contain object-center rounded-xl'
                 />
               </motion.div>
               <div>
