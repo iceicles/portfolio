@@ -219,7 +219,7 @@ const cards = [
   {
     description: 'Upload images to the cloud',
     title: 'PICz',
-    src: '/[project] picz.png',
+    src: '/project-pics/picz.png',
     ctaPillText: '>',
     ctaText: 'View',
     ctaLink: 'https://picz-dev.vercel.app/',
