@@ -28,7 +28,7 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #1f2937; /* Custom scrollbar thumb color */
+    background-color: #3282f6; /* Custom scrollbar thumb color */
     border-radius: 8px;
   }
 
@@ -36,13 +36,12 @@ body {
     background-color: #000000; /* Custom scrollbar track color */
   }
 
-  /* You can also style scrollbar for Firefox */
   html {
     scrollbar-width: auto;
-    scrollbar-color: #1f2937 #000000; /* thumb color and track color for Firefox */
+    scrollbar-color: #3282f6 #000000; /* thumb color and track color for Firefox */
   }
 
-  /* contains some group of styles relating to profile pic */
+  /* Default styles for all browsers (including Chrome, Firefox, etc.) */
   .profile-pic {
     shape-outside: circle(46%);
     aspect-ratio: 1/1;
@@ -51,10 +50,18 @@ body {
     margin: 2rem;
   }
 
+  /* Safari-specific styles (doesn't seem to work currently) */
+  @media not all and (min-resolution:.001dpcm) {
+    .profile-pic {
+      -webkit-shape-outside: circle(56%);
+      shape-outside: circle(56%);
+    }
+  }
+
   /* custom scrollbar styles */
   .custom-scrollbar {
     scrollbar-width: auto; /* makes the scrollbar thinner */
-    scrollbar-color: #1f2937 #000000; /* thumb color and track color */
+    scrollbar-color: #3282f6 #000000; /* thumb color and track color */
     overscroll-behavior-y: contain; /* ensures scrolling only happens on the modal and not the background as well */
     overflow-y: scroll;
     overflow: auto; /* ensures that scrolling happens only when necessary (i.e., if there's content to be scrolled to) */
@@ -66,7 +73,7 @@ body {
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #1f2937;
+    background-color: #3282f6;
     border-radius: 0.625rem;
   }
 
@@ -117,23 +124,23 @@ body {
 
   /* animates outline */
   .border-button {
-    outline: solid 2px #6b7280;
+    outline: solid 2px rgb(59 130 246 / 0.4);
     transition: outline linear;
   }
 
   /* active link */
   .active-link {
     text-decoration: underline;
-    text-decoration-color: #1f2937;
+    text-decoration-color: rgb(59 130 246 / 0.4);
     text-decoration-thickness: 0.25rem;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.35rem;
   }
 
   .hover-link {
     text-decoration: underline;
     text-decoration-thickness: 0.25rem;
     text-decoration-color: #1f2937;
-    text-underline-offset: 0.25rem;
+    text-underline-offset: 0.35rem;
   }
 
   /* used to hide header nav on scroll in mobile */

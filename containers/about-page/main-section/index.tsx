@@ -19,13 +19,44 @@ const MainSection = () => {
             Canadian Tire Corporation
           </a>{' '}
           (CTC), where I specialize in crafting intuitive, responsive, and
-          visually appealing web applications. Some of the features I've worked
-          on include:
+          visually appealing web applications. Some of the features I've
+          developed include:
         </p>
         <p className={`${paragraphStyles} italic`}>
-          Single Sign-On (SSO) functionality for authenticating users once
-          without the need of re-authentication across CTC's multiple banners;
-          Cart & Checkout functionality on CTC's loyalty web app -{' '}
+          Single Sign-On (SSO) functionality for one time authentication without
+          the need of re-authorization across CTC's multiple banners: ({' '}
+          <a
+            href='https://www.sportchek.ca/en.html'
+            target='_blank'
+            className='active-link'
+          >
+            Sport Chek{' '}
+          </a>
+          &nbsp;
+          <a
+            href='https://www.marks.com/en.html'
+            target='_blank'
+            className='active-link'
+          >
+            Marks{' '}
+          </a>
+          &nbsp;
+          <a
+            href='https://www.atmosphere.ca/en.html'
+            target='_blank'
+            className='active-link'
+          >
+            Atmosphere{' '}
+          </a>
+          &nbsp;
+          <a
+            href='https://www.lequipeur.com/fr.html'
+            target='_blank'
+            className='active-link'
+          >
+            L'équipeur{' '}
+          </a>
+          &nbsp;); Cart & Checkout functionality on CTC's loyalty web app -{' '}
           <a
             href='https://triangle.canadiantire.ca/en.html'
             target='_blank'
@@ -60,10 +91,9 @@ const MainSection = () => {
           <strong>DevOps Engineer</strong> role with the Cloud Operations and
           Automation Team. During my time there, I automated operating systems
           for patching on servers and created dashboards to monitor server
-          functionality and filter through lengthy (mostly unecessary) log
-          metrics. <br /> After almost a year, I accepted an{' '}
-          <strong>Android Developer</strong> role and was part of the team
-          working on the{' '}
+          functionality and filter through superfluous log metrics. <br /> After
+          almost a year, I accepted an <strong>Android Developer</strong> role
+          and was part of the team working on the{' '}
           <a
             href='https://play.google.com/store/apps/details?id=com.simplygood.ct&hl=en_CA'
             target='_blank'
@@ -86,9 +116,9 @@ const MainSection = () => {
           >
             SAS Institute
           </a>{' '}
-          as an IT technician, where I honed my skills in bash scripting,
-          tackling computer and server related problems, and providing
-          user-centric solutions.{' '}
+          as an <strong>IT Specialist</strong>, where I honed my skills in bash
+          scripting, tackling computer and server related problems, and
+          providing user-centric solutions.{' '}
         </p>
 
         <p className={paragraphStyles}>

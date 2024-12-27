@@ -3,10 +3,14 @@ import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import { FooterNavs } from './constant';
 import { InitialsLogo } from '../Logo/InitialsLogo';
+import { isActive } from '../../utils/isActive';
+import { usePathname } from 'next/navigation';
 
 const Footer: FC<{}> = ({}) => {
   const date = new Date();
   const [dateYear, setDateYear] = useState(date.getFullYear());
+
+  const pathname = usePathname();
 
   useEffect(() => {
     setDateYear(date.getFullYear());
@@ -21,7 +25,14 @@ const Footer: FC<{}> = ({}) => {
             <ul className='sm:flex md:flex-row sm:flex-wrap sm:items-center flex flex-col gap-1'>
               {FooterNavs.map((footer) => (
                 <li key={footer.id} className='self-start lg:self-auto p-2'>
-                  <Link href={footer.href} className='hover:hover-link'>
+                  <Link
+                    href={footer.href}
+                    className={
+                      isActive(footer.href, pathname)
+                        ? 'max-lg:active-link max-lg:font-bold'
+                        : 'hover:hover-link'
+                    }
+                  >
                     {footer.value}
                   </Link>
                 </li>
@@ -35,7 +46,7 @@ const Footer: FC<{}> = ({}) => {
             <Link
               href='https://github.com/iceicles'
               target='_blank'
-              className='hover:underline hover:decoration-gray-800 hover:decoration-4 relative group animate-pulse'
+              className='hover:underline hover:decoration-gray-800 active:decoration-blue-500/40 hover:decoration-4 relative group animate-pulse'
             >
               iceicles{' '}
               <span className='absolute left-[3rem] group-hover:no-underline'>
