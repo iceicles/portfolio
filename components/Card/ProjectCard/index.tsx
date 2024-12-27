@@ -145,7 +145,7 @@ export function ProjectCard() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className='p-4 mb-2 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/30 cursor-pointer lg:hover:border-button border border-solid lg:border-none'
+            className='max-lg:border-button p-4 mb-2 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/30 cursor-pointer lg:hover:border-button border border-solid lg:border-none'
           >
             <div className='flex gap-4 flex-col md:flex-row '>
               <motion.div
