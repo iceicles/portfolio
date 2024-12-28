@@ -24,7 +24,7 @@ const MainSection = () => {
         </p>
         <p className={`${paragraphStyles} italic`}>
           Single Sign-On (SSO) functionality for one time authentication without
-          the need of re-authorization across CTC's multiple banners: ({' '}
+          the need of re-authorization across CTC's multiple banners: &nbsp;
           <a
             href='https://www.sportchek.ca/en.html'
             target='_blank'
@@ -32,7 +32,7 @@ const MainSection = () => {
           >
             Sport Chek{' '}
           </a>
-          &nbsp;
+          , &nbsp;
           <a
             href='https://www.marks.com/en.html'
             target='_blank'
@@ -40,7 +40,7 @@ const MainSection = () => {
           >
             Marks{' '}
           </a>
-          &nbsp;
+          , &nbsp;
           <a
             href='https://www.atmosphere.ca/en.html'
             target='_blank'
@@ -48,15 +48,15 @@ const MainSection = () => {
           >
             Atmosphere{' '}
           </a>
-          &nbsp;
+          , &nbsp;
           <a
             href='https://www.lequipeur.com/fr.html'
             target='_blank'
             className='active-link'
           >
-            L'équipeur{' '}
+            L'équipeur
           </a>
-          &nbsp;); Cart & Checkout functionality on CTC's loyalty web app -{' '}
+          &nbsp;; Cart & Checkout functionality on CTC's loyalty web app -{' '}
           <a
             href='https://triangle.canadiantire.ca/en.html'
             target='_blank'
@@ -93,18 +93,19 @@ const MainSection = () => {
           for patching on servers and created dashboards to monitor server
           functionality and filter through superfluous log metrics. <br /> After
           almost a year, I accepted an <strong>Android Developer</strong> role
-          and was part of the team working on the{' '}
+          and was part of the team working on{' '}
           <a
             href='https://play.google.com/store/apps/details?id=com.simplygood.ct&hl=en_CA'
             target='_blank'
             className='active-link'
           >
-            CTC android mobile app
-          </a>
-          . There I worked on the reviews section of the app, wishlist/sign in
+            CTC's android mobile app
+          </a>{' '}
+          where I worked on the reviews section of the app, wishlist/sign in
           implementation, developed a new homepage interface, and before my
           current role, contributed to a wayfinding feature to help users
-          navigate efficiently within Canadian Tire stores and its subsidiaries.
+          efficiently navigate within Canadian Tire stores including its
+          subsidiaries.
         </p>
 
         <p className={paragraphStyles}>
@@ -130,7 +131,7 @@ const MainSection = () => {
         </p>
 
         <p className={paragraphStyles}>
-          I also make sure to balance my life with a healthy workout routine,
+          I make sure to balance my life with a healthy workout routine,
           following a{' '}
           <a
             href='https://www.muscleandstrength.com/workouts/6-day-powerbuilding-split-meal-plan'
