@@ -105,7 +105,7 @@ export function ProjectCard() {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target='_blank'
-                    className='px-4 py-3 text-sm rounded-full font-bold bg-gray-800 hover:bg-gray-700 text-white'
+                    className='px-4 py-3 text-sm rounded-full font-bold bg-blue-800 hover:bg-blue-700 text-white'
                   >
                     {active.ctaText}
                   </motion.a>
@@ -226,13 +226,13 @@ const cards = [
     content: () => {
       return (
         <p>
-          PICz is a web application that allows users to easily upload and share
-          their images on the cloud. By leveraging Cloudinary, a powerful cloud
-          storage platform, PICz enables seamless storage, management, and
-          sharing of photos. Once uploaded, images are made publicly accessible,
-          allowing anyone to view and enjoy them. The platform is designed for
-          simplicity and convenience, making it ideal for users looking to
-          showcase their images online with ease.
+          PICz is a fullstack web application that allows users to easily upload
+          and share their images on the cloud. By leveraging Cloudinary, a
+          powerful cloud storage platform, PICz enables seamless storage,
+          management, and sharing of photos. Once uploaded, images are made
+          publicly accessible, allowing anyone to view and enjoy them. The
+          platform is designed for simplicity and convenience, making it ideal
+          for users looking to showcase their images online with ease.
         </p>
       );
     },

@@ -16,7 +16,8 @@ const config: Config = {
       animation: {
         'logo-spin': 'rotateYanim 2s linear',
         'pulse2': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'bounce2': 'bounce2 2s ease infinite'
+        'bounce2': 'bounce2 2s ease infinite',
+        'navActive': 'navActive 0.2s ease-out forwards'
       },
       keyframes: {
         rotateYanim: {
@@ -38,6 +39,16 @@ const config: Config = {
           '0%, 20%, 50%, 80%, 100%': {transform: 'translateY(0)'},
 	        '40%': {transform: 'translateY(-30px)'},
 	        '60%': {transform: 'translateY(-15px)'},
+        },
+        navActive: {
+          'from': {
+            // background: 'none',
+            margin: '0px',
+          },
+          'to': {
+            // background: 'rgb(59 130 246 / 0.4)', 
+            margin: '8px'
+          }
         }
       },
       screens: {

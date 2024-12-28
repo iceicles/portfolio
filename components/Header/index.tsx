@@ -20,7 +20,7 @@ const Header: FC<{}> = ({}) => {
       ) : (
         <div className='md:flex justify-center items-center py-4 sm:gap-x-16 sm:py-8 relative mb-[8vh] desktop-lg:mb-[15vh] invisible md:visible'>
           <nav>
-            <ul className='flex gap-10'>
+            <ul className='flex gap-16'>
               {HeaderNavs.map((el, _i) => (
                 <HeaderNav
                   key={_i}
@@ -28,7 +28,7 @@ const Header: FC<{}> = ({}) => {
                   href={el.href}
                   styles={
                     isActive(el.href, pathname)
-                      ? 'active-link font-bold'
+                      ? 'active-link font-bold animate-navActive'
                       : 'hover:hover-link'
                   }
                 />
