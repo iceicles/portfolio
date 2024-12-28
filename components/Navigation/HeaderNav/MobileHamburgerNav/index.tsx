@@ -119,7 +119,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
                     key={_i}
                     value={el.value}
                     href={el.href}
-                    styles={
+                    linkItemStyle={
                       isActive(el.href, pathname)
                         ? 'no-underline font-bold bg-blue-500/40 p-1 rounded'
                         : ''

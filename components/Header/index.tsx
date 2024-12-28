@@ -26,11 +26,12 @@ const Header: FC<{}> = ({}) => {
                   key={_i}
                   value={el.value}
                   href={el.href}
-                  styles={
+                  linkItemStyle={
                     isActive(el.href, pathname)
                       ? 'active-link font-bold animate-navActive'
-                      : 'hover:hover-link'
+                      : ''
                   }
+                  anchorStyle='hover:hover-link'
                 />
               ))}
               <li className='absolute left-[2%]'>

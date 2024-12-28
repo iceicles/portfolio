@@ -4,13 +4,19 @@ import Link from 'next/link';
 interface HeaderNavProps {
   value: string;
   href: string;
-  styles?: string;
+  linkItemStyle?: string;
+  anchorStyle?: string;
 }
 
-export const HeaderNav: FC<HeaderNavProps> = ({ value, href, styles }) => {
+export const HeaderNav: FC<HeaderNavProps> = ({
+  value,
+  href,
+  linkItemStyle,
+  anchorStyle,
+}) => {
   return (
-    <li className={styles}>
-      <Link href={href} className='block w-full'>
+    <li className={linkItemStyle}>
+      <Link href={href} className={`block w-full ${anchorStyle}`}>
         {value}
       </Link>
     </li>
