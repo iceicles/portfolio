@@ -31,7 +31,9 @@ const Header: FC<{}> = ({}) => {
                       ? 'active-link font-bold animate-navActive'
                       : ''
                   }
-                  anchorStyle='hover:hover-link'
+                  anchorStyle={
+                    isActive(el.href, pathname) ? '' : 'hover:hover-link'
+                  }
                 />
               ))}
               <li className='absolute left-[2%]'>
