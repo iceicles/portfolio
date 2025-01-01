@@ -15,10 +15,7 @@ const InfoSection: FC<InfoSectionProps> = ({}) => {
       <nav>
         <ul className='flex gap-[15px] items-center justify-start'>
           {/* TODO: make this more robust.. no hard coding :/ */}
-          <a
-            href='https://www.linkedin.com/in/moses-umogbai-a88798149/'
-            target='_blank'
-          >
+          <a href='https://www.linkedin.com/in/moses-umogbai/' target='_blank'>
             <LinkedIn className='text-4xl text-blue-500' />
           </a>
           <a href='https://github.com/iceicles' target='_blank'>
