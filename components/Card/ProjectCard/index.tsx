@@ -61,7 +61,7 @@ export function ProjectCard() {
                   duration: 0.05,
                 },
               }}
-              className='flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6'
+              className='flex absolute top-2 right-2 sm:hidden items-center justify-center bg-white rounded-full h-6 w-6'
               onClick={() => setActive(null)}
             >
               <CloseIcon />

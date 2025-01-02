@@ -28,7 +28,7 @@ const Header: FC<{}> = ({}) => {
                   href={el.href}
                   linkItemStyle={
                     isActive(el.href, pathname)
-                      ? 'active-link font-bold animate-navActive'
+                      ? 'link font-bold animate-navActive'
                       : ''
                   }
                   anchorStyle={

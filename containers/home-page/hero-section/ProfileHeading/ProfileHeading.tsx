@@ -7,7 +7,7 @@ const ProfileHeading: FC<{}> = ({}) => {
       <h1 className='text-[clamp(1.8rem,1rem+3vw,3.5rem)] mb-[calc(1.25rem*2)]'>
         <strong className=''>
           Hi,{' '}
-          <span className='text-[#3282f6] bg-gray-800 rounded p-2 '>
+          <span className='text-primaryColor bg-gray-800 rounded p-2 '>
             I'm Moses
           </span>
         </strong>

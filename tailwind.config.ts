@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryColor: "var(--primary-color)",
+        primaryColorOpacityForty: " var(--primary-color-opacity-40)"
       },
       animation: {
         'logo-spin': 'rotateYanim 2s linear',

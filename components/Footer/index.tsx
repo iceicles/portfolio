@@ -29,7 +29,7 @@ const Footer: FC<{}> = ({}) => {
                     href={footer.href}
                     className={
                       isActive(footer.href, pathname)
-                        ? 'max-lg:active-link max-lg:font-bold'
+                        ? 'max-lg:link max-lg:font-bold'
                         : 'hover:hover-link'
                     }
                   >

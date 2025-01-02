@@ -14,7 +14,7 @@ const MainSection = () => {
           <a
             href='https://www.canadiantire.ca/en.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Canadian Tire Corporation
           </a>{' '}
@@ -28,7 +28,7 @@ const MainSection = () => {
           <a
             href='https://www.sportchek.ca/en.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Sport Chek{' '}
           </a>
@@ -36,7 +36,7 @@ const MainSection = () => {
           <a
             href='https://www.marks.com/en.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Marks{' '}
           </a>
@@ -44,7 +44,7 @@ const MainSection = () => {
           <a
             href='https://www.atmosphere.ca/en.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Atmosphere{' '}
           </a>
@@ -52,7 +52,7 @@ const MainSection = () => {
           <a
             href='https://www.lequipeur.com/fr.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             L'équipeur
           </a>
@@ -60,7 +60,7 @@ const MainSection = () => {
           <a
             href='https://triangle.canadiantire.ca/en.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Triangle
           </a>
@@ -76,7 +76,7 @@ const MainSection = () => {
           <a
             href='https://www.youtube.com/shorts/eUOijM2fWFc'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Hoppy Cube
           </a>{' '}
@@ -97,7 +97,7 @@ const MainSection = () => {
           <a
             href='https://play.google.com/store/apps/details?id=com.simplygood.ct&hl=en_CA'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             CTC's android mobile app
           </a>{' '}
@@ -113,7 +113,7 @@ const MainSection = () => {
           <a
             href='https://www.sas.com/en_ca/home.html'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             SAS Institute
           </a>{' '}
@@ -136,7 +136,7 @@ const MainSection = () => {
           <a
             href='https://www.muscleandstrength.com/workouts/6-day-powerbuilding-split-meal-plan'
             target='_blank'
-            className='active-link'
+            className='link'
           >
             Push/Pull/Legs (PPL)
           </a>{' '}
