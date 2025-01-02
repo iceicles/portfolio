@@ -27,6 +27,7 @@ const Footer: FC<{}> = ({}) => {
                 <li key={footer.id} className='self-start lg:self-auto p-2'>
                   <Link
                     href={footer.href}
+                    prefetch={true}
                     className={
                       isActive(footer.href, pathname)
                         ? 'max-lg:link max-lg:font-bold'

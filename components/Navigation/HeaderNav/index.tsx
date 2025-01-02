@@ -16,7 +16,11 @@ export const HeaderNav: FC<HeaderNavProps> = ({
 }) => {
   return (
     <li className={linkItemStyle}>
-      <Link href={href} className={`block w-full ${anchorStyle}`}>
+      <Link
+        href={href}
+        prefetch={true}
+        className={`block w-full ${anchorStyle}`}
+      >
         {value}
       </Link>
     </li>
