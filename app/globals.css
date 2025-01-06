@@ -105,6 +105,17 @@ body {
     */
   }
 
+  /* 
+  apply this scrollbar color between 768 and 1024 
+  this should hopefully help to allow the gradient scrollbar color for custom-scrollbar to take effect on mobile
+  */
+
+  /* @media (min-width: 0px) and (max-width: 768px) {
+    html {
+      scrollbar-color: var(--gradient-color-blue) #150022;
+    }
+  } */
+
   .gradient-text {
     /* fallback: Set a background color. */
     background-color: #1f2937;

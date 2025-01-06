@@ -18,7 +18,7 @@ const AboutMeCardShort: FC<AboutMeCardShort> = ({
     <>
       <button
         onClick={() => onClick(id)}
-        className='card hover:card-hover hover:animate-pulse2 lg:hover:animate-none max-lg:border-button p-[14px] md:p-4 rounded-xl shadow-2xl shadow-blue-500/30 border border-solid lg:border-none'
+        className='card lg:hover:card-hover hover:animate-pulse2 lg:hover:animate-none max-lg:border-button p-[14px] md:p-4 rounded-xl shadow-2xl shadow-blue-500/30 border border-solid lg:border-none'
       >
         <h1 className='text-xl'>{title}</h1>
         {/* <span className='flex gap-1 justify-center items-center'>
