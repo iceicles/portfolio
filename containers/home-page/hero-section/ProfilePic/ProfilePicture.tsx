@@ -14,14 +14,14 @@ export const ProfilePicture: FC<ProfilePicProps> = ({ additionalClass }) => {
           className={`p-4 rounded-[50%] border-dotted border-2 hover:animate-bounce2 border-gray-800 ${additionalClass}`}
           src='/profile-pic.jpg'
           alt='Moses'
-          width={350}
-          height={350}
+          width={250}
+          height={250}
         />
-        <pre className='absolute h-fit -rotate-[57deg] top-[40px] left-[-25px] sm:top-[60px] sm:left-[-20px] md:top-[75px] md:left-[-15px] lg:top-[90px] lg:left-[unset] text-gray-500'>
+        <pre className='absolute h-fit -rotate-[57deg] top-[44px] left-[-19px] sm:top-[60px] sm:left-[-12px] md:top-[75px] md:left-[-15px] lg:top-[70px] lg:left-[-8px] text-gray-500'>
           <span className='absolute rotate-90 top-[5px] left-[-20px]'>
             <Arrow />
           </span>
-          <span className='bg-gray-800 p-0.5 rounded-md'>Download CV</span>
+          <span className='bg-gray-950 p-0.5 rounded-md'>Download CV</span>
         </pre>
       </a>
     </div>

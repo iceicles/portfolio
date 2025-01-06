@@ -250,7 +250,7 @@ const cards = [
     title: 'Website PDF & Image Generator',
     src: '/placeholder-image.jpg',
     ctaPillText: '>',
-    ctaText: 'View',
+    ctaText: 'In Progress',
     //ctaLink: '#',
     content: () => {
       return (

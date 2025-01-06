@@ -29,9 +29,7 @@ const Footer: FC<{}> = ({}) => {
                     href={footer.href}
                     prefetch={true}
                     className={
-                      isActive(footer.href, pathname)
-                        ? 'max-lg:link max-lg:font-bold'
-                        : 'hover:hover-link'
+                      isActive(footer.href, pathname) ? '' : 'hover:hover-link'
                     }
                   >
                     {footer.value}

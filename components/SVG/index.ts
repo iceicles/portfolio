@@ -6,6 +6,8 @@ export {default as Hamburger} from './Hamburger.svg'
 export {default as InitialsLogo} from './InitialsLogo.svg'
 export {default as Arrow} from './Arrow.svg'
 export {default as CTCLogo} from './CTCLogo.svg'
+export {default as ChevronDown} from './ChevronDown.svg'
+export {default as ChevronUp} from './ChevronUp.svg'
 
 // fullstack web tools
 export {default as HTML} from './HTML.svg'
