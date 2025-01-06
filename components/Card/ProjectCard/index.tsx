@@ -69,7 +69,7 @@ export function ProjectCard() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className='w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black sm:rounded-3xl overflow-hidden lg:border-y'
+              className='w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-black sm:rounded-3xl overflow-hidden lg:border-t-2 border-t-gradientColorBlue lg:border-b-2 border-b-gradientColorPurple'
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -145,7 +145,7 @@ export function ProjectCard() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className='max-lg:border-button p-4 mb-2 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/30 cursor-pointer lg:hover:border-button border border-solid lg:border-none'
+            className='max-lg:border-button p-4 mb-4 flex flex-col md:flex-row justify-between items-center  rounded-xl shadow-2xl shadow-blue-500/30 cursor-pointer lg:hover:border-button border border-solid lg:border-none'
           >
             <div className='flex gap-4 flex-col md:flex-row '>
               <motion.div

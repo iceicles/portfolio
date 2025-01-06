@@ -7,7 +7,7 @@ const ProfileHeading: FC<{}> = ({}) => {
       <h1 className='text-[clamp(1.8rem,1rem+3vw,3.5rem)] mb-[calc(1.25rem*2)]'>
         <strong className=''>
           Hi,{' '}
-          <span className='text-primaryColor bg-gray-800 rounded p-2 '>
+          <span className='gradient-text bg-gray-800 rounded p-2 '>
             I'm Moses
           </span>
         </strong>
@@ -17,7 +17,7 @@ const ProfileHeading: FC<{}> = ({}) => {
         I'm a software engineer, hobbyist game developer, and an enthusiast of
         music and fitness
       </h2>
-      <hr className='m-4 p-4 border-gray-800' />
+      <hr className='m-4 p-4 border-slate-800' />
       <p className='text-[clamp(1rem,.6rem+2vw,1.6rem)] mb-[calc(1.5rem*2)]'>
         <i>
           I currently live in Toronto, Ontario, and work for {}

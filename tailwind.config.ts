@@ -13,7 +13,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primaryColor: "var(--primary-color)",
-        primaryColorOpacityForty: " var(--primary-color-opacity-40)"
+        primaryColorOpacityForty: " var(--primary-color-opacity-40)",
+        gradientColorBlue: "var(--gradient-color-blue)",
+        gradientColorPurple: "var(--gradient-color-purple)",
+        gradientColorBluePurple: "var(--main-linear-gradient)" // not in use
       },
       animation: {
         'logo-spin': 'rotateYanim 2s linear',

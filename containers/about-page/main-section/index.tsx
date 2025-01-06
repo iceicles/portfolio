@@ -98,7 +98,7 @@ const MainSection = () => {
 
         <div className='relative w-full flex items-center justify-center'>
           {!toggleExpandCollapse && (
-            <span className='before:content-[""] absolute bg-gray-800 top-[50%] h-[1px] right-[70%] w-[30%] sm:right-[60%] md:w-[40%]'></span>
+            <span className='before:content-[""] absolute bg-gradientColorBlue top-[50%] h-[1px] right-[70%] w-[30%] sm:right-[60%] md:w-[40%]'></span>
           )}
           <button
             className={`${
@@ -112,7 +112,7 @@ const MainSection = () => {
             </span>
           </button>
           {!toggleExpandCollapse && (
-            <span className='after:content-[""] absolute bg-gray-800 top-[50%] h-[1px] left-[70%] w-[30%] sm:left-[60%] md:w-[40%]'></span>
+            <span className='after:content-[""] absolute bg-gradientColorPurple top-[50%] h-[1px] left-[70%] w-[30%] sm:left-[60%] md:w-[40%]'></span>
           )}
         </div>
         <div className={`${toggleExpandCollapse ? 'visible' : 'hidden'}`}>
@@ -177,7 +177,7 @@ const MainSection = () => {
           </p>
           <div className='relative w-full flex items-center justify-center'>
             {toggleExpandCollapse && (
-              <span className='before:content-[""] absolute bg-gray-800 top-[50%] h-[1px] right-[70%] w-[30%] sm:right-[60%] md:w-[40%]'></span>
+              <span className='before:content-[""] absolute bg-gradientColorBlue top-[50%] h-[1px] right-[70%] w-[30%] sm:right-[60%] md:w-[40%]'></span>
             )}
             <button
               className={`${
@@ -191,7 +191,7 @@ const MainSection = () => {
               </span>
             </button>
             {toggleExpandCollapse && (
-              <span className='after:content-[""] absolute bg-gray-800 top-[50%] h-[1px] left-[70%] w-[30%] sm:left-[60%] md:w-[40%]'></span>
+              <span className='after:content-[""] absolute bg-gradientColorPurple top-[50%] h-[1px] left-[70%] w-[30%] sm:left-[60%] md:w-[40%]'></span>
             )}
           </div>
         </div>

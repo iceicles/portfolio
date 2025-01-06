@@ -7,7 +7,19 @@
   --foreground: #ffffff;
   --primary-color: rgb(59 130 246);
   --primary-color-opacity-40: rgb(59 130 246 / 0.4);
-
+  --gradient-color-blue: rgb(3 90 240);
+  --gradient-color-purple: rgb(109 16 202);
+  --main-linear-gradient: linear-gradient(
+    rgb(49, 52, 235),
+    rgb(2, 2, 112),
+    rgb(53 0 105)
+  );
+  --main-linear-gradient-right: linear-gradient(
+    to right,
+    rgb(49, 52, 235),
+    rgb(2, 2, 112),
+    rgb(53 0 105)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,23 +39,96 @@ body {
 }
 
 @layer utilities {
-  /* Customize scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+  /* customize scrollbar for Webkit browsers (Chrome, Safari, Edge) */
   ::-webkit-scrollbar {
     width: 12px; /* Adjust the width of the scrollbar */
   }
 
+  /* styling the scrollbar thumb (the draggable part) */
   ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color); /* Custom scrollbar thumb color */
-    border-radius: 8px;
+    background: var(
+      --main-linear-gradient
+    ); /* gradient background for the thumb */
+    border-radius: 4px; /* makes the thumb rounded */
+  }
+
+  /* styling the hover state of the thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      var(--gradient-color-purple),
+      var(--gradient-color-blue)
+    ); /* Gradient changes when hovered */
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #000000; /* Custom scrollbar track color */
+    background-color: #000000; /* custom scrollbar track color */
+  }
+
+  /* custom scrollbar styles */
+  .custom-scrollbar {
+    scrollbar-width: auto; /* makes the scrollbar thinner */
+    overscroll-behavior-y: contain; /* ensures scrolling only happens on the modal and not the background as well */
+    overflow-y: scroll;
+    overflow: auto; /* ensures that scrolling happens only when necessary (i.e., if there's content to be scrolled to) */
+  }
+
+  /*for Webkit browsers (Chrome, Safari, Edge) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--main-linear-gradient);
+    border-radius: 0.625rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      var(--gradient-color-purple),
+      var(--gradient-color-blue)
+    ); /* gradient changes when hovered */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 0.625rem;
   }
 
   html {
     scrollbar-width: auto;
-    scrollbar-color: var(--primary-color) #000000; /* thumb color and track color for Firefox */
+    /* 
+    applying the below changes the scrollbar color for chrome as well
+    need a way to detect firefox and change it specifically for it
+    also: we can't apply gradient to firefox browsers lol
+    scrollbar-color: var(--gradient-color-blue) #000000;  thumb color and track color for Firefox 
+    
+    */
+  }
+
+  .gradient-text {
+    /* fallback: Set a background color. */
+    background-color: #1f2937;
+    color: var(--primary-color);
+
+    /* create the gradient. */
+    background-image: linear-gradient(
+      45deg,
+      var(--gradient-color-blue),
+      var(--gradient-color-purple)
+    );
+
+    /* set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    background-clip: text;
+
+    /* use the text as a mask for the background. */
+    /* this will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
 
   /* Default styles for all browsers (including Chrome, Firefox, etc.) */
@@ -56,35 +141,11 @@ body {
   }
 
   /* Safari-specific styles (doesn't seem to work currently) */
-  @media not all and (min-resolution:.001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm) {
     .profile-pic {
       -webkit-shape-outside: circle(56%);
       shape-outside: circle(56%);
     }
-  }
-
-  /* custom scrollbar styles */
-  .custom-scrollbar {
-    scrollbar-width: auto; /* makes the scrollbar thinner */
-    scrollbar-color: var(--primary-color) #000000; /* thumb color and track color */
-    overscroll-behavior-y: contain; /* ensures scrolling only happens on the modal and not the background as well */
-    overflow-y: scroll;
-    overflow: auto; /* ensures that scrolling happens only when necessary (i.e., if there's content to be scrolled to) */
-  }
-
-  /* For Webkit browsers (Chrome, Safari, Edge) */
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
-    border-radius: 0.625rem;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background-color: #000000;
-    border-radius: 0.625rem;
   }
 
   /* mobile hamburger Styles */
@@ -129,23 +190,31 @@ body {
 
   /* animates outline */
   .border-button {
-    outline: solid 2px var(--primary-color-opacity-40);
-    transition: outline linear;
+    border-image: linear-gradient(
+        to right,
+        var(--gradient-color-blue) 0%,
+        var(--gradient-color-purple) 100%
+      )
+      1;
+    border-width: 1px;
+    border-style: solid;
   }
 
   /* animates cards */
   .card {
     transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
-   }
- 
+  }
+
   .card-hover {
-    box-shadow: 0 5px 10px var(--primary-color), 0 -7px 24px -16px var(--primary-color-opacity-40);
-    transform: scale3d(1.1, 1.1, 1.1) translate3d(0.1rem, -0.7rem, 20rem);
+    box-shadow: 0 5px 0px var(--gradient-color-blue),
+      0px -7px 20px -16px var(--gradient-color-purple);
+    transform: scale3d(1.05, 1.05, 1.05) translate3d(0.1rem, -0.7rem, 20rem);
   }
 
   @media (max-width: 768px) {
     .card-hover {
-      box-shadow: 0 2px 5px var(--primary-color), 0 -2px 10px -10px var(--primary-color-opacity-40);
+      box-shadow: 0 2px 5px var(--primary-color),
+        0 -2px 10px -10px var(--primary-color-opacity-40);
       transform: scale3d(1.05, 1.05, 1.05) translate3d(0, -0.2rem, 0);
     }
   }
@@ -163,6 +232,66 @@ body {
     text-decoration-thickness: 0.25rem;
     text-decoration-color: #1f2937;
     text-underline-offset: 0.35rem;
+  }
+
+  .nav-link {
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--main-linear-gradient-right);
+    bottom: 1;
+    left: 0;
+  }
+
+  /* transition header nav link on hover */
+  .nav-link-hover {
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+  }
+
+  .nav-link-hover::after {
+    content: '';
+    position: absolute;
+    width: 0; /* start with width 0 */
+    height: 4px;
+    background: linear-gradient(to right, #1f2937, grey);
+    bottom: 1;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-link-hover:hover::after {
+    width: 100%; /* on hover, the width expands to 100% */
+  }
+
+  /* transition footer nav link on hover*/
+  .nav-link-hover-footer {
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+  }
+
+  .nav-link-hover-footer::after {
+    content: '';
+    position: absolute;
+    width: 0; /* start with width 0 */
+    height: 4px;
+    background: linear-gradient(to right, #1f2937, grey);
+    top: 100%;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-link-hover-footer:hover::after {
+    width: 100%; /* on hover, the width expands to 100% */
   }
 
   /* used to hide header nav on scroll in mobile */
