@@ -27,6 +27,10 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'
           rel='stylesheet'
         />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IE+Guides&display=swap'
+          rel='stylesheet'
+        ></link>
       </head>
       <body className={'flex flex-col min-h-screen m-0'}>
         <Header />

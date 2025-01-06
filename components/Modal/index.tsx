@@ -50,7 +50,7 @@ const Modal: FC<Modal> = ({
         >
           <div
             ref={modalRef}
-            className='relative p-4 w-full max-w-[52rem] max-h-[36rem] border-2 rounded-lg custom-scrollbar border-gray-500'
+            className='relative p-4 w-full max-w-[52rem] max-h-[36rem] border-2 rounded-lg custom-scrollbar border-l-blue-500 border-t-blue-700 border-r-blue-900 border-b-purple-800'
           >
             <div className='relative rounded-lg shadow'>
               <div className='flex flex-col sm:flex-row items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600'>

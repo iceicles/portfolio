@@ -11,7 +11,7 @@ const InfoSection: FC<InfoSectionProps> = ({}) => {
   };
   return (
     <section>
-      <pre className='mb-4'>Connect with me</pre>
+      <p className='mb-4 caveat-font text-xl sm:text-2xl'>Connect with me</p>
       <nav>
         <ul className='flex gap-[15px] items-center justify-start'>
           {/* TODO: make this more robust.. no hard coding :/ */}

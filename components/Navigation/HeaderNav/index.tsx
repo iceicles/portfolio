@@ -19,7 +19,7 @@ export const HeaderNav: FC<HeaderNavProps> = ({
       <Link
         href={href}
         prefetch={true}
-        className={`block w-full ${anchorStyle}`}
+        className={`block w-full ${anchorStyle} caveat-font text-xl`}
       >
         {value}
       </Link>

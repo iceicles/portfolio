@@ -5,10 +5,10 @@
 :root {
   --background: #000000;
   --foreground: #ffffff;
-  --primary-color: rgb(59 130 246);
+  --primary-color: rgb(59 130 246); /* #3b82f6 */
   --primary-color-opacity-40: rgb(59 130 246 / 0.4);
-  --gradient-color-blue: rgb(3 90 240);
-  --gradient-color-purple: rgb(109 16 202);
+  --gradient-color-blue: rgb(3 90 240); /* #035af0 */
+  --gradient-color-purple: rgb(109 16 202); /* #6d10ca */
   --main-linear-gradient: linear-gradient(
     rgb(49, 52, 235),
     rgb(2, 2, 112),
@@ -36,6 +36,10 @@ body {
   background: var(--background);
   font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
   /* @apply bg-black; */
+}
+
+.caveat-font {
+  font-family: 'Caveat', 'IBM Plex Sans', Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
