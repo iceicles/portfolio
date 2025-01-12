@@ -84,7 +84,7 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
       <div
         className={`${hideNav ? 'hide-header-nav' : 'header-nav'} p-4 mb-[8vh]`}
       >
-        <div className='flex justify-between items-center w-full'>
+        <div className='flex justify-between items-center w-full animate-transitionIn'>
           <InitialsLogo
             styles={`${showLogo ? 'block' : 'hidden'} self-center`}
           />

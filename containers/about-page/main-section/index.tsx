@@ -107,7 +107,7 @@ const MainSection = () => {
             onClick={expandCollapseHandler}
           >
             <span className='flex items-center gap-2'>
-              <p>Expand</p>
+              <p>Read More</p>
               <ChevronDown className='group-hover:translate-y-1 duration-500' />
             </span>
           </button>
@@ -186,7 +186,7 @@ const MainSection = () => {
               onClick={expandCollapseHandler}
             >
               <span className='flex items-center gap-2'>
-                <p>Collapse</p>
+                <p>Read Less</p>
                 <ChevronUp className='group-hover:-translate-y-1 duration-500' />
               </span>
             </button>

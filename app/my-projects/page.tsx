@@ -14,7 +14,7 @@ const Projects: FC<{}> = ({}) => {
   }, [pathname]);
 
   return (
-    <div className='flex flex-col items-center justify-center gap-9'>
+    <div className='flex flex-col items-center justify-center gap-9 md:animate-transitionInNoRotate'>
       <TypeAnimation
         sequence={[
           'Working on it...',

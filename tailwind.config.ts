@@ -22,9 +22,42 @@ const config: Config = {
         'logo-spin': 'rotateYanim 2s linear',
         'pulse2': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'bounce2': 'bounce2 2s ease infinite',
-        'navActive': 'navActive 0.2s ease-out forwards'
+        'navActive': 'navActive 0.2s ease-out forwards',
+        'transitionIn': 'transitionIn 0.5s ease-in forwards',
+        'transitionInNoRotate': 'transitionInNoRotate 0.5s linear',
+        'transitionOut': 'transitionOut 0.5s linear forwards',
       },
       keyframes: {
+        transitionIn: {
+          from: {
+            opacity: '0',
+            transform: 'rotateX(-10deg)'
+          },
+          to: {
+            opacity: '1',
+            transform: 'rotateX(0deg)'
+          }
+        },
+        transitionInNoRotate: {
+          from: {
+            opacity: '0',
+           
+          },
+          to: {
+            opacity: '1',
+         
+          }
+        },
+        transitionOut: {
+          from: {
+            opacity: '1',
+            display: 'block'
+          },
+          to: {
+            opacity: '0',
+            display: 'none'
+          }
+        },
         rotateYanim: {
           '0%': { transform: 'rotateY(0deg)' },
           '100%': { transform: 'rotateY(360deg)' },

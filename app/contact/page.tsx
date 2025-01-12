@@ -12,7 +12,11 @@ const Contact: FC<{}> = ({}) => {
     }
   }, [pathname]);
 
-  return <MainSection />;
+  return (
+    <div className='md:animate-transitionIn'>
+      <MainSection />
+    </div>
+  );
 };
 
 export default Contact;

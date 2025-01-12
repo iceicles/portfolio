@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <main className='m-auto w-[85%] md:w-[75%]'>
+      <main className='m-auto w-[85%] md:w-[75%] md:animate-transitionIn'>
         <HeroSection />
       </main>
     </>
