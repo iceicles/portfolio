@@ -115,7 +115,11 @@ const MainSection = () => {
             <span className='after:content-[""] absolute bg-gradientColorPurple top-[50%] h-[1px] left-[70%] w-[30%] sm:left-[60%] md:w-[40%]'></span>
           )}
         </div>
-        <div className={`${toggleExpandCollapse ? 'visible' : 'hidden'}`}>
+        <div
+          className={`${
+            toggleExpandCollapse ? 'visible' : 'hidden animate-transitionOut'
+          } animate-transitionIn`}
+        >
           <p className={`${paragraphStyles}`}>
             I have worn many hats at CTC, first of which was a{' '}
             <strong>DevOps Engineer</strong> role with the Cloud Operations and

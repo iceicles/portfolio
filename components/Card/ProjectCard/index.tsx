@@ -226,9 +226,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          PICz is a fullstack web application that allows users to easily upload
-          and share their images on the cloud. By leveraging Cloudinary, a
-          powerful cloud storage platform, PICz enables seamless storage,
+          PICz is a full-stack MERN web application that allows users to easily
+          upload and share their images on the cloud. By leveraging Cloudinary,
+          a powerful cloud storage platform, PICz enables seamless storage,
           management, and sharing of photos. Once uploaded, images are made
           publicly accessible, allowing anyone to view and enjoy them. The
           platform is designed for simplicity and convenience, making it ideal
