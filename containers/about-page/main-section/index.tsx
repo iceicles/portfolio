@@ -117,8 +117,8 @@ const MainSection = () => {
         </div>
         <div
           className={`${
-            toggleExpandCollapse ? 'visible' : 'hidden animate-transitionOut'
-          } animate-transitionIn`}
+            toggleExpandCollapse ? 'visible' : 'hidden md:animate-transitionOut'
+          } md:animate-transitionIn`}
         >
           <p className={`${paragraphStyles}`}>
             I have worn many hats at CTC, first of which was a{' '}
