@@ -5,6 +5,7 @@ import { InitialsLogo } from '../../../Logo/InitialsLogo';
 import { usePathname } from 'next/navigation';
 import { MobileHamburgerNavs } from './constants';
 import { isActive } from '../../../../utils/isActive';
+import Link from 'next/link';
 
 export const MobileHamburgerNav: FC<{}> = ({}) => {
   const [showModal, setShowModal] = useState(false);
@@ -127,6 +128,13 @@ export const MobileHamburgerNav: FC<{}> = ({}) => {
                   />
                 );
               })}
+              <a
+                download
+                href='/Resume.pdf'
+                className='border-button w-fit mt-[20%] p-2'
+              >
+                Resume
+              </a>
             </ul>
           </nav>
         </div>
