@@ -246,25 +246,44 @@ const cards = [
     ],
   },
   {
-    description: 'Convert Websites to PDF and/or Images',
-    title: 'Website PDF & Image Generator',
-    src: '/placeholder-image.jpg',
+    description: 'Access a personalized dashboard',
+    title: 'Auth Demo',
+    src: '/project-pics/auth-demo.png',
     ctaPillText: '>',
-    ctaText: 'In Progress',
-    //ctaLink: '#',
+    ctaText: 'View',
+    ctaLink: 'https://authdemo-dev.vercel.app/',
     content: () => {
       return (
         <p>
-          By leveraging the power of Puppeteer, a headless browser automation
-          tool, this project scrapes the content of the provided URL and
-          generates a high-quality screenshot or a downloadable PDF. This
-          easy-to-use tool is perfect for saving webpages in a visual format,
-          archiving content, or sharing static versions of web pages with
-          others. Simply input the URL, choose your desired format, and download
-          the result in seconds.
+          A 'simple' full-stack authentication app demonstrating JSON Web Token
+          (JWT) management, storing user credentials in a database, and
+          showcasing the difference between authorization and authentication. In
+          real world application, please do not roll your own auth.
         </p>
       );
     },
-    ctaTools: ['HTML', 'CSS', 'JavaScript', 'Puppeteer'],
+    ctaTools: ['HTML', 'Tailwind', 'React', 'NextJS', 'NodeJS', 'ExpressJS'],
   },
+  // {
+  //   description: 'Convert Websites to PDF and/or Images',
+  //   title: 'Website PDF & Image Generator',
+  //   src: '/placeholder-image.jpg',
+  //   ctaPillText: '>',
+  //   ctaText: 'In Progress',
+  //   //ctaLink: '#',
+  //   content: () => {
+  //     return (
+  //       <p>
+  //         By leveraging the power of Puppeteer, a headless browser automation
+  //         tool, this project scrapes the content of the provided URL and
+  //         generates a high-quality screenshot or a downloadable PDF. This
+  //         easy-to-use tool is perfect for saving webpages in a visual format,
+  //         archiving content, or sharing static versions of web pages with
+  //         others. Simply input the URL, choose your desired format, and download
+  //         the result in seconds.
+  //       </p>
+  //     );
+  //   },
+  //   ctaTools: ['HTML', 'CSS', 'JavaScript', 'Puppeteer'],
+  // },
 ];
