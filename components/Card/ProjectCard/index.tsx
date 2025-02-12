@@ -122,7 +122,7 @@ export function ProjectCard() {
                       ? active.content()
                       : active.content}
                   </motion.div>
-                  <motion.div className='flex gap-2 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8 lg:mt-0'>
+                  <motion.div className='flex items-center gap-2 h-14 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8 lg:mt-0'>
                     {active.ctaTools.map((tool, _id) => (
                       <ToolsIcon
                         key={_id}
@@ -262,7 +262,15 @@ const cards = [
         </p>
       );
     },
-    ctaTools: ['HTML', 'Tailwind', 'React', 'NextJS', 'NodeJS', 'ExpressJS'],
+    ctaTools: [
+      'HTML',
+      'TypeScript',
+      'Tailwind',
+      'React',
+      'NextJS',
+      'NodeJS',
+      'ExpressJS',
+    ],
   },
   // {
   //   description: 'Convert Websites to PDF and/or Images',
