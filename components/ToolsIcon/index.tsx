@@ -52,6 +52,8 @@ interface ToolsSVG {
   TerraformStyle?: string;
 }
 
+// TODO: extract return JSX into resuable component
+
 export const ToolsIcon: FC<ToolsSVG> = ({
   name,
   className,
@@ -81,29 +83,119 @@ export const ToolsIcon: FC<ToolsSVG> = ({
   const logoToRender = () => {
     switch (name) {
       case tools.HTML:
-        return <HTML className={HTMLStyle ? HTMLStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <HTML className={HTMLStyle ? HTMLStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                HTML
+              </span>
+            </div>
+          </>
+        );
       case tools.CSS:
-        return <CSS className={CSSStyle ? CSSStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <CSS className={CSSStyle ? CSSStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                CSS
+              </span>
+            </div>
+          </>
+        );
       case tools.Tailwind:
-        return <Tailwind className={TWStyle ? TWStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <Tailwind className={TWStyle ? TWStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] left-[-1rem] bg-gray-800'>
+                Tailwind
+              </span>
+            </div>
+          </>
+        );
       case tools.JavaScript:
-        return <JavaScript className={JSStyle ? JSStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <JavaScript className={JSStyle ? JSStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                JavaScript
+              </span>
+            </div>
+          </>
+        );
       case tools.TypeScript:
-        return <TypeScript className={TSStyle ? TSStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <TypeScript className={TSStyle ? TSStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                TypeScript
+              </span>
+            </div>
+          </>
+        );
       case tools.React:
-        return <ReactSVG className={ReactStyle ? ReactStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <ReactSVG className={ReactStyle ? ReactStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                React
+              </span>
+            </div>
+          </>
+        );
       case tools.NextJS:
-        return <NextJS className={NextJSStyle ? NextJSStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <NextJS className={NextJSStyle ? NextJSStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                NextJS
+              </span>
+            </div>
+          </>
+        );
       case tools.Redux:
         return <Redux className={ReduxStyle ? ReduxStyle : className} />;
       case tools.NodeJS:
-        return <NodeJS className={NodeJSStyle ? NodeJSStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <NodeJS className={NodeJSStyle ? NodeJSStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                NodeJS
+              </span>
+            </div>
+          </>
+        );
       case tools.ExpressJS:
         return (
-          <ExpressJS className={ExpressJSStyle ? ExpressJSStyle : className} />
+          <>
+            <div className='relative group'>
+              <ExpressJS
+                className={ExpressJSStyle ? ExpressJSStyle : className}
+              />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                ExpressJS
+              </span>
+            </div>
+          </>
         );
       case tools.MongoDB:
-        return <MongoDB className={MongoDBStyle ? MongoDBStyle : className} />;
+        return (
+          <>
+            <div className='relative group'>
+              <MongoDB className={MongoDBStyle ? MongoDBStyle : className} />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                MongoDB
+              </span>
+            </div>
+          </>
+        );
       case tools.Firebase:
         return (
           <Firebase className={FireBaseStyle ? FireBaseStyle : className} />
@@ -112,10 +204,18 @@ export const ToolsIcon: FC<ToolsSVG> = ({
         return <Docker className={DockerStyle ? DockerStyle : className} />;
       case tools.Cloudinary:
         return (
-          <Cloudinary
-            className={CloudinaryStyle ? CloudinaryStyle : className}
-          />
+          <>
+            <div className='relative group'>
+              <Cloudinary
+                className={CloudinaryStyle ? CloudinaryStyle : className}
+              />
+              <span className='absolute hidden group-hover:block top-[-10px] bg-gray-800'>
+                Cloudinary
+              </span>
+            </div>
+          </>
         );
+
       case tools.Puppeteer:
         return (
           <Puppeteer className={PuppeteerStyle ? PuppeteerStyle : className} />
