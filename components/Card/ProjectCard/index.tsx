@@ -257,8 +257,7 @@ const cards = [
         <p>
           A 'simple' full-stack authentication app demonstrating JSON Web Token
           (JWT) management, storing user credentials in a database, and
-          showcasing the difference between authorization and authentication. In
-          real world application, please do not roll your own auth.
+          showcasing the difference between authorization and authentication
         </p>
       );
     },
@@ -271,6 +270,23 @@ const cards = [
       'NodeJS',
       'ExpressJS',
     ],
+  },
+  {
+    description: 'Manage your contacts',
+    title: 'Contact Book',
+    src: '/project-pics/contact-book.png',
+    ctaPillText: '>',
+    ctaText: 'View',
+    ctaLink: 'https://contact-book-dev.vercel.app/',
+    content: () => {
+      return (
+        <p>
+          Supports creating, edting, deleting, and searching. Can't get simpler
+          than that
+        </p>
+      );
+    },
+    ctaTools: ['HTML', 'CSS', 'JavaScript'],
   },
   // {
   //   description: 'Convert Websites to PDF and/or Images',
