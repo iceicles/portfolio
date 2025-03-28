@@ -248,7 +248,7 @@ const cards = [
   {
     description: 'Access a personalized dashboard',
     title: 'Auth Demo',
-    src: '/project-pics/auth-demo.png',
+    src: '/project-pics/roll-auth-demo.png',
     ctaPillText: '>',
     ctaText: 'View',
     ctaLink: 'https://authdemo-dev.vercel.app/',
