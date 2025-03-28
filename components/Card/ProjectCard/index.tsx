@@ -256,8 +256,9 @@ const cards = [
       return (
         <p>
           A 'simple' full-stack authentication app demonstrating JSON Web Token
-          (JWT) management, storing user credentials in a database, and
-          showcasing the difference between authorization and authentication
+          (JWT) management with cookies, storing user credentials in a database,
+          and showcasing the difference between authorization and
+          authentication.
         </p>
       );
     },
@@ -281,8 +282,8 @@ const cards = [
     content: () => {
       return (
         <p>
-          Supports creating, edting, deleting, and searching. Can't get simpler
-          than that
+          Supports creating, edting, deleting, and searching. Can't get easier
+          than that.
         </p>
       );
     },
