@@ -10,7 +10,7 @@ const TimelineSection: FC<TimelineSection> = ({ showModal }) => {
   return (
     <section className='flex flex-col sm:flex-row lg:flex-col mt-12 sm:m-auto sm:mt-12 gap-4 md:gap-[5vw] justify-evenly sm:flex-wrap xl:border-l-2 border-dashed border-gray-500'>
       <div className='flex flex-col gap-16 mx-12'>
-        <h1 className='text-2xl text-center text-8 font-medium underline underline-offset-8 decoration-wavy decoration-blue-500/40 xl:no-underline'>
+        <h1 className='text-2xl text-center text-8 font-medium no-underline md:decoration-wavy decoration-blue-500/40 xl:no-underline'>
           <i>Experience</i>
         </h1>
         <div className='flex flex-col sm:flex-row lg:flex-col gap-5'>
