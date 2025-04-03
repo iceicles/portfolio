@@ -27,7 +27,7 @@ const ContactForm: FC<ContactForm> = ({
 }) => {
   const labelClass = 'flex flex-col gap-[0.625rem] font-bold';
   const inputClass =
-    'border-solid border-2 border-white bg-transparent p-[0.5rem] italic';
+    'border-solid border-2 rounded-md border-white bg-transparent p-[0.5rem] placeholder:italic placeholder:text-gray-500';
   const errorClass = 'text-red-500 block h-2 pt-1';
 
   return (
@@ -77,7 +77,7 @@ const ContactForm: FC<ContactForm> = ({
               rows={6}
               name={message}
               placeholder='What would you like to talk about?'
-              className='border-solid border-2 border-white bg-transparent w-[100%] p-[0.5rem] italic'
+              className='border-solid border-2 border-white rounded-md bg-transparent w-[100%] p-[0.5rem] placeholder:italic placeholder:text-gray-500 md:rounded-lg'
             ></textarea>
           </label>
           {errors && <span className={errorClass}>{errors.messageError}</span>}
