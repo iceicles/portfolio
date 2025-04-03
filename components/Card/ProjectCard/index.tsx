@@ -226,13 +226,13 @@ const cards = [
     content: () => {
       return (
         <p>
-          PICz is a full-stack MERN web application that allows users to easily
-          upload and share their images on the cloud. By leveraging Cloudinary,
-          a powerful cloud storage platform, PICz enables seamless storage,
-          management, and sharing of photos. Once uploaded, images are made
-          publicly accessible, allowing anyone to view and enjoy them. The
-          platform is designed for simplicity and convenience, making it ideal
-          for users looking to showcase their images online with ease.
+          PICz allows users to easily upload and share their images on the
+          cloud. By leveraging Cloudinary as its cloud storage platform, PICz
+          enables seamless storage, management, and sharing of photos. Once
+          uploaded, images are made publicly accessible, allowing anyone to view
+          and enjoy them. The platform is designed for simplicity and
+          convenience, making it ideal for users looking to showcase their
+          images online with ease.
         </p>
       );
     },
@@ -255,10 +255,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          A 'simple' full-stack authentication app demonstrating JSON Web Token
-          (JWT) management with cookies, storing user credentials in a database,
-          and showcasing the difference between authorization and
-          authentication.
+          A 'hand-rolled' authentication app demonstrating JSON Web Token (JWT)
+          management with cookies, storing user credentials in a database, and
+          showcasing the difference between authorization and authentication.
         </p>
       );
     },
@@ -282,8 +281,8 @@ const cards = [
     content: () => {
       return (
         <p>
-          Supports creating, edting, deleting, and searching. Can't get easier
-          than that.
+          A contact management app that supports creating, editing, deleting,
+          and searching - couldn't be simpler!
         </p>
       );
     },
