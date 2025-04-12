@@ -101,14 +101,24 @@ export function ProjectCard() {
                     </motion.p>
                   </div>
 
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
-                    target='_blank'
-                    className='px-4 py-3 text-sm rounded-full font-bold bg-blue-800 hover:bg-blue-700 text-white'
-                  >
-                    {active.ctaText}
-                  </motion.a>
+                  <div className='space-x-2'>
+                    <motion.a
+                      layoutId={`button-${active.title}-${id}`}
+                      href={active.ctaLink}
+                      target='_blank'
+                      className='px-4 py-3 text-sm rounded-md font-bold bg-blue-800 hover:bg-blue-700 text-white'
+                    >
+                      {active.ctaText}
+                    </motion.a>
+                    <motion.a
+                      // layoutId={`button-${active.title}-${id}`}
+                      href={active.gitLink}
+                      target='_blank'
+                      className='px-4 py-3 text-sm rounded-md font-bold bg-gray-800 hover:bg-gray-700 text-white'
+                    >
+                      {active.gitText}
+                    </motion.a>
+                  </div>
                 </div>
                 <div className='pt-4 relative px-4'>
                   <motion.div
@@ -223,6 +233,8 @@ const cards = [
     ctaPillText: '>',
     ctaText: 'View',
     ctaLink: 'https://picz-dev.vercel.app/',
+    gitText: 'Code',
+    gitLink: 'https://github.com/iceicles/picz',
     content: () => {
       return (
         <p>
@@ -252,6 +264,8 @@ const cards = [
     ctaPillText: '>',
     ctaText: 'View',
     ctaLink: 'https://authdemo-dev.vercel.app/',
+    gitText: 'Code',
+    gitLink: 'https://github.com/iceicles/auth-demo',
     content: () => {
       return (
         <p>
@@ -278,6 +292,8 @@ const cards = [
     ctaPillText: '>',
     ctaText: 'View',
     ctaLink: 'https://contact-book-dev.vercel.app/',
+    gitText: 'Code',
+    gitLink: 'https://github.com/iceicles/contact-book',
     content: () => {
       return (
         <p>
